@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B31F3F1789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
+		09B31F411789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
+		09B31F431789CCAF0018AB6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F421789CCAF0018AB6A /* CoreGraphics.framework */; };
+		09B31F491789CCAF0018AB6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F471789CCAF0018AB6A /* InfoPlist.strings */; };
+		09B31F4B1789CCAF0018AB6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F4A1789CCAF0018AB6A /* main.m */; };
+		09B31F4F1789CCAF0018AB6A /* WhichBillAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */; };
+		09B31F511789CCAF0018AB6A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F501789CCAF0018AB6A /* Default.png */; };
+		09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F521789CCAF0018AB6A /* Default@2x.png */; };
+		09B31F551789CCAF0018AB6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F541789CCAF0018AB6A /* Default-568h@2x.png */; };
+		09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F571789CCAF0018AB6A /* WhichBillViewController.m */; };
+		09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */; };
+		09B31F631789CCAF0018AB6A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F621789CCAF0018AB6A /* SenTestingKit.framework */; };
+		09B31F641789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
+		09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
+		09B31F6D1789CCAF0018AB6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */; };
+		09B31F701789CCAF0018AB6A /* WhichBillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B31F661789CCAF0018AB6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B31F331789CCAF0018AB6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09B31F3A1789CCAF0018AB6A;
+			remoteInfo = WhichBill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B31F3B1789CCAF0018AB6A /* WhichBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B31F3E1789CCAF0018AB6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09B31F401789CCAF0018AB6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09B31F421789CCAF0018AB6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09B31F461789CCAF0018AB6A /* WhichBill-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhichBill-Info.plist"; sourceTree = "<group>"; };
+		09B31F481789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09B31F4A1789CCAF0018AB6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09B31F4C1789CCAF0018AB6A /* WhichBill-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhichBill-Prefix.pch"; sourceTree = "<group>"; };
+		09B31F4D1789CCAF0018AB6A /* WhichBillAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillAppDelegate.h; sourceTree = "<group>"; };
+		09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillAppDelegate.m; sourceTree = "<group>"; };
+		09B31F501789CCAF0018AB6A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		09B31F521789CCAF0018AB6A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		09B31F541789CCAF0018AB6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		09B31F561789CCAF0018AB6A /* WhichBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillViewController.h; sourceTree = "<group>"; };
+		09B31F571789CCAF0018AB6A /* WhichBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillViewController.m; sourceTree = "<group>"; };
+		09B31F5A1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhichBillViewController.xib; sourceTree = "<group>"; };
+		09B31F611789CCAF0018AB6A /* WhichBillTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhichBillTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B31F621789CCAF0018AB6A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		09B31F6A1789CCAF0018AB6A /* WhichBillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhichBillTests-Info.plist"; sourceTree = "<group>"; };
+		09B31F6C1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09B31F6E1789CCAF0018AB6A /* WhichBillTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillTests.h; sourceTree = "<group>"; };
+		09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B31F381789CCAF0018AB6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F3F1789CCAF0018AB6A /* UIKit.framework in Frameworks */,
+				09B31F411789CCAF0018AB6A /* Foundation.framework in Frameworks */,
+				09B31F431789CCAF0018AB6A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B31F5D1789CCAF0018AB6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F631789CCAF0018AB6A /* SenTestingKit.framework in Frameworks */,
+				09B31F641789CCAF0018AB6A /* UIKit.framework in Frameworks */,
+				09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09B31F321789CCAF0018AB6A = {
+			isa = PBXGroup;
+			children = (
+				09B31F441789CCAF0018AB6A /* WhichBill */,
+				09B31F681789CCAF0018AB6A /* WhichBillTests */,
+				09B31F3D1789CCAF0018AB6A /* Frameworks */,
+				09B31F3C1789CCAF0018AB6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09B31F3C1789CCAF0018AB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F3B1789CCAF0018AB6A /* WhichBill.app */,
+				09B31F611789CCAF0018AB6A /* WhichBillTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09B31F3D1789CCAF0018AB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F3E1789CCAF0018AB6A /* UIKit.framework */,
+				09B31F401789CCAF0018AB6A /* Foundation.framework */,
+				09B31F421789CCAF0018AB6A /* CoreGraphics.framework */,
+				09B31F621789CCAF0018AB6A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09B31F441789CCAF0018AB6A /* WhichBill */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F4D1789CCAF0018AB6A /* WhichBillAppDelegate.h */,
+				09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */,
+				09B31F561789CCAF0018AB6A /* WhichBillViewController.h */,
+				09B31F571789CCAF0018AB6A /* WhichBillViewController.m */,
+				09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */,
+				09B31F451789CCAF0018AB6A /* Supporting Files */,
+			);
+			path = WhichBill;
+			sourceTree = "<group>";
+		};
+		09B31F451789CCAF0018AB6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F461789CCAF0018AB6A /* WhichBill-Info.plist */,
+				09B31F471789CCAF0018AB6A /* InfoPlist.strings */,
+				09B31F4A1789CCAF0018AB6A /* main.m */,
+				09B31F4C1789CCAF0018AB6A /* WhichBill-Prefix.pch */,
+				09B31F501789CCAF0018AB6A /* Default.png */,
+				09B31F521789CCAF0018AB6A /* Default@2x.png */,
+				09B31F541789CCAF0018AB6A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09B31F681789CCAF0018AB6A /* WhichBillTests */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F6E1789CCAF0018AB6A /* WhichBillTests.h */,
+				09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */,
+				09B31F691789CCAF0018AB6A /* Supporting Files */,
+			);
+			path = WhichBillTests;
+			sourceTree = "<group>";
+		};
+		09B31F691789CCAF0018AB6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B31F6A1789CCAF0018AB6A /* WhichBillTests-Info.plist */,
+				09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09B31F3A1789CCAF0018AB6A /* WhichBill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B31F731789CCAF0018AB6A /* Build configuration list for PBXNativeTarget "WhichBill" */;
+			buildPhases = (
+				09B31F371789CCAF0018AB6A /* Sources */,
+				09B31F381789CCAF0018AB6A /* Frameworks */,
+				09B31F391789CCAF0018AB6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhichBill;
+			productName = WhichBill;
+			productReference = 09B31F3B1789CCAF0018AB6A /* WhichBill.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09B31F601789CCAF0018AB6A /* WhichBillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B31F761789CCAF0018AB6A /* Build configuration list for PBXNativeTarget "WhichBillTests" */;
+			buildPhases = (
+				09B31F5C1789CCAF0018AB6A /* Sources */,
+				09B31F5D1789CCAF0018AB6A /* Frameworks */,
+				09B31F5E1789CCAF0018AB6A /* Resources */,
+				09B31F5F1789CCAF0018AB6A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09B31F671789CCAF0018AB6A /* PBXTargetDependency */,
+			);
+			name = WhichBillTests;
+			productName = WhichBillTests;
+			productReference = 09B31F611789CCAF0018AB6A /* WhichBillTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09B31F331789CCAF0018AB6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WhichBill;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Amar Shah";
+			};
+			buildConfigurationList = 09B31F361789CCAF0018AB6A /* Build configuration list for PBXProject "WhichBill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09B31F321789CCAF0018AB6A;
+			productRefGroup = 09B31F3C1789CCAF0018AB6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09B31F3A1789CCAF0018AB6A /* WhichBill */,
+				09B31F601789CCAF0018AB6A /* WhichBillTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09B31F391789CCAF0018AB6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F491789CCAF0018AB6A /* InfoPlist.strings in Resources */,
+				09B31F511789CCAF0018AB6A /* Default.png in Resources */,
+				09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */,
+				09B31F551789CCAF0018AB6A /* Default-568h@2x.png in Resources */,
+				09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B31F5E1789CCAF0018AB6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F6D1789CCAF0018AB6A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B31F5F1789CCAF0018AB6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09B31F371789CCAF0018AB6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F4B1789CCAF0018AB6A /* main.m in Sources */,
+				09B31F4F1789CCAF0018AB6A /* WhichBillAppDelegate.m in Sources */,
+				09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B31F5C1789CCAF0018AB6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B31F701789CCAF0018AB6A /* WhichBillTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09B31F671789CCAF0018AB6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09B31F3A1789CCAF0018AB6A /* WhichBill */;
+			targetProxy = 09B31F661789CCAF0018AB6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09B31F471789CCAF0018AB6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B31F481789CCAF0018AB6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B31F5A1789CCAF0018AB6A /* en */,
+			);
+			name = WhichBillViewController.xib;
+			sourceTree = "<group>";
+		};
+		09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B31F6C1789CCAF0018AB6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09B31F711789CCAF0018AB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		09B31F721789CCAF0018AB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09B31F741789CCAF0018AB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
+				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09B31F751789CCAF0018AB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
+				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09B31F771789CCAF0018AB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhichBill.app/WhichBill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
+				INFOPLIST_FILE = "WhichBillTests/WhichBillTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		09B31F781789CCAF0018AB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhichBill.app/WhichBill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
+				INFOPLIST_FILE = "WhichBillTests/WhichBillTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B31F361789CCAF0018AB6A /* Build configuration list for PBXProject "WhichBill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B31F711789CCAF0018AB6A /* Debug */,
+				09B31F721789CCAF0018AB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B31F731789CCAF0018AB6A /* Build configuration list for PBXNativeTarget "WhichBill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B31F741789CCAF0018AB6A /* Debug */,
+				09B31F751789CCAF0018AB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09B31F761789CCAF0018AB6A /* Build configuration list for PBXNativeTarget "WhichBillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B31F771789CCAF0018AB6A /* Debug */,
+				09B31F781789CCAF0018AB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09B31F331789CCAF0018AB6A /* Project object */;
+}

@@ -1,7 +1,9 @@
 WhichBill
 =========
 
-Web-based educational game for students with disabilities.
+An educational game for the iPad.
+
+With WhichBill, students with disabilities practice using paper currency for everyday purchases.
 
 Contact:
 Amar Shah

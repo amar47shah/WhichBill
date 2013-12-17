@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09354FD4179AEB4000B612EC /* WBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 09354FD3179AEB4000B612EC /* WBItem.m */; };
+		09354FD7179AF15F00B612EC /* WBItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09354FD6179AF15F00B612EC /* WBItemStore.m */; };
+		09355055179B5CD000B612EC /* Dollar01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355016179B5CD000B612EC /* Dollar01.jpg */; };
+		09355056179B5CD000B612EC /* Dollar05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355017179B5CD000B612EC /* Dollar05.jpg */; };
+		09355057179B5CD000B612EC /* Dollar10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355018179B5CD000B612EC /* Dollar10.jpg */; };
+		09355058179B5CD000B612EC /* Dollar20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355019179B5CD000B612EC /* Dollar20.jpg */; };
+		0935505B179B823200B612EC /* WBImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0935505A179B823200B612EC /* WBImageStore.m */; };
+		09355064179DECC500B612EC /* WBAnswerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09355063179DECC500B612EC /* WBAnswerButton.m */; };
+		0935506F179DED5A00B612EC /* IMG_4075.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355065179DED5500B612EC /* IMG_4075.jpg */; };
+		09355070179DED5A00B612EC /* IMG_4076.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355066179DED5500B612EC /* IMG_4076.jpg */; };
+		09355071179DED5A00B612EC /* IMG_4090.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355067179DED5500B612EC /* IMG_4090.jpg */; };
+		09355072179DED5A00B612EC /* IMG_4095.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355068179DED5600B612EC /* IMG_4095.jpg */; };
+		09355073179DED5A00B612EC /* IMG_4099.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355069179DED5600B612EC /* IMG_4099.jpg */; };
+		09355074179DED5A00B612EC /* IMG_4100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0935506A179DED5600B612EC /* IMG_4100.jpg */; };
+		09355075179DED5A00B612EC /* IMG_4107.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0935506B179DED5700B612EC /* IMG_4107.jpg */; };
+		09355076179DED5A00B612EC /* IMG_4114.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0935506C179DED5700B612EC /* IMG_4114.jpg */; };
+		09355077179DED5A00B612EC /* IMG_4120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0935506D179DED5800B612EC /* IMG_4120.jpg */; };
+		09355078179DED5A00B612EC /* IMG_4124.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0935506E179DED5900B612EC /* IMG_4124.jpg */; };
 		09B31F3F1789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
 		09B31F411789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
 		09B31F431789CCAF0018AB6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F421789CCAF0018AB6A /* CoreGraphics.framework */; };
@@ -36,6 +54,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09354FD2179AEB4000B612EC /* WBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBItem.h; sourceTree = "<group>"; };
+		09354FD3179AEB4000B612EC /* WBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItem.m; sourceTree = "<group>"; };
+		09354FD5179AF15F00B612EC /* WBItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBItemStore.h; sourceTree = "<group>"; };
+		09354FD6179AF15F00B612EC /* WBItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItemStore.m; sourceTree = "<group>"; };
+		09355016179B5CD000B612EC /* Dollar01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dollar01.jpg; sourceTree = "<group>"; };
+		09355017179B5CD000B612EC /* Dollar05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dollar05.jpg; sourceTree = "<group>"; };
+		09355018179B5CD000B612EC /* Dollar10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dollar10.jpg; sourceTree = "<group>"; };
+		09355019179B5CD000B612EC /* Dollar20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dollar20.jpg; sourceTree = "<group>"; };
+		09355059179B823100B612EC /* WBImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBImageStore.h; sourceTree = "<group>"; };
+		0935505A179B823200B612EC /* WBImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageStore.m; sourceTree = "<group>"; };
+		09355062179DECC500B612EC /* WBAnswerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAnswerButton.h; sourceTree = "<group>"; };
+		09355063179DECC500B612EC /* WBAnswerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAnswerButton.m; sourceTree = "<group>"; };
+		09355065179DED5500B612EC /* IMG_4075.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4075.jpg; sourceTree = "<group>"; };
+		09355066179DED5500B612EC /* IMG_4076.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4076.jpg; sourceTree = "<group>"; };
+		09355067179DED5500B612EC /* IMG_4090.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4090.jpg; sourceTree = "<group>"; };
+		09355068179DED5600B612EC /* IMG_4095.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4095.jpg; sourceTree = "<group>"; };
+		09355069179DED5600B612EC /* IMG_4099.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4099.jpg; sourceTree = "<group>"; };
+		0935506A179DED5600B612EC /* IMG_4100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4100.jpg; sourceTree = "<group>"; };
+		0935506B179DED5700B612EC /* IMG_4107.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4107.jpg; sourceTree = "<group>"; };
+		0935506C179DED5700B612EC /* IMG_4114.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4114.jpg; sourceTree = "<group>"; };
+		0935506D179DED5800B612EC /* IMG_4120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4120.jpg; sourceTree = "<group>"; };
+		0935506E179DED5900B612EC /* IMG_4124.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4124.jpg; sourceTree = "<group>"; };
 		09B31F3B1789CCAF0018AB6A /* WhichBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B31F3E1789CCAF0018AB6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09B31F401789CCAF0018AB6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +124,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09354FD8179B5CD000B612EC /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+				09354FD9179B5CD000B612EC /* Items */,
+				09355015179B5CD000B612EC /* Money */,
+			);
+			path = Imgs;
+			sourceTree = "<group>";
+		};
+		09354FD9179B5CD000B612EC /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				09355065179DED5500B612EC /* IMG_4075.jpg */,
+				09355066179DED5500B612EC /* IMG_4076.jpg */,
+				09355067179DED5500B612EC /* IMG_4090.jpg */,
+				09355068179DED5600B612EC /* IMG_4095.jpg */,
+				09355069179DED5600B612EC /* IMG_4099.jpg */,
+				0935506A179DED5600B612EC /* IMG_4100.jpg */,
+				0935506B179DED5700B612EC /* IMG_4107.jpg */,
+				0935506C179DED5700B612EC /* IMG_4114.jpg */,
+				0935506D179DED5800B612EC /* IMG_4120.jpg */,
+				0935506E179DED5900B612EC /* IMG_4124.jpg */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		09355015179B5CD000B612EC /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				09355016179B5CD000B612EC /* Dollar01.jpg */,
+				09355017179B5CD000B612EC /* Dollar05.jpg */,
+				09355018179B5CD000B612EC /* Dollar10.jpg */,
+				09355019179B5CD000B612EC /* Dollar20.jpg */,
+			);
+			path = Money;
+			sourceTree = "<group>";
+		};
 		09B31F321789CCAF0018AB6A = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +194,21 @@
 		09B31F441789CCAF0018AB6A /* WhichBill */ = {
 			isa = PBXGroup;
 			children = (
-				09B31F4D1789CCAF0018AB6A /* WhichBillAppDelegate.h */,
-				09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */,
+				09354FD2179AEB4000B612EC /* WBItem.h */,
+				09354FD5179AF15F00B612EC /* WBItemStore.h */,
+				09355059179B823100B612EC /* WBImageStore.h */,
+				09355062179DECC500B612EC /* WBAnswerButton.h */,
 				09B31F561789CCAF0018AB6A /* WhichBillViewController.h */,
+				09B31F4D1789CCAF0018AB6A /* WhichBillAppDelegate.h */,
+				09354FD3179AEB4000B612EC /* WBItem.m */,
+				09354FD6179AF15F00B612EC /* WBItemStore.m */,
+				0935505A179B823200B612EC /* WBImageStore.m */,
+				09355063179DECC500B612EC /* WBAnswerButton.m */,
 				09B31F571789CCAF0018AB6A /* WhichBillViewController.m */,
+				09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */,
 				09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */,
 				09B31F451789CCAF0018AB6A /* Supporting Files */,
+				09354FD8179B5CD000B612EC /* Imgs */,
 			);
 			path = WhichBill;
 			sourceTree = "<group>";
@@ -237,6 +323,20 @@
 				09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */,
 				09B31F551789CCAF0018AB6A /* Default-568h@2x.png in Resources */,
 				09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */,
+				09355055179B5CD000B612EC /* Dollar01.jpg in Resources */,
+				09355056179B5CD000B612EC /* Dollar05.jpg in Resources */,
+				09355057179B5CD000B612EC /* Dollar10.jpg in Resources */,
+				09355058179B5CD000B612EC /* Dollar20.jpg in Resources */,
+				0935506F179DED5A00B612EC /* IMG_4075.jpg in Resources */,
+				09355070179DED5A00B612EC /* IMG_4076.jpg in Resources */,
+				09355071179DED5A00B612EC /* IMG_4090.jpg in Resources */,
+				09355072179DED5A00B612EC /* IMG_4095.jpg in Resources */,
+				09355073179DED5A00B612EC /* IMG_4099.jpg in Resources */,
+				09355074179DED5A00B612EC /* IMG_4100.jpg in Resources */,
+				09355075179DED5A00B612EC /* IMG_4107.jpg in Resources */,
+				09355076179DED5A00B612EC /* IMG_4114.jpg in Resources */,
+				09355077179DED5A00B612EC /* IMG_4120.jpg in Resources */,
+				09355078179DED5A00B612EC /* IMG_4124.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +374,10 @@
 				09B31F4B1789CCAF0018AB6A /* main.m in Sources */,
 				09B31F4F1789CCAF0018AB6A /* WhichBillAppDelegate.m in Sources */,
 				09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */,
+				09354FD4179AEB4000B612EC /* WBItem.m in Sources */,
+				09354FD7179AF15F00B612EC /* WBItemStore.m in Sources */,
+				0935505B179B823200B612EC /* WBImageStore.m in Sources */,
+				09355064179DECC500B612EC /* WBAnswerButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +560,7 @@
 				09B31F751789CCAF0018AB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09B31F761789CCAF0018AB6A /* Build configuration list for PBXNativeTarget "WhichBillTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +569,7 @@
 				09B31F781789CCAF0018AB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

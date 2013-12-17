@@ -13,7 +13,6 @@
 @interface WhichBillAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) WhichBillViewController *viewController;
 
 @end

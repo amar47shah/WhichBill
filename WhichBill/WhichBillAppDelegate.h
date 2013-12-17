@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ObjCMongoDB.h"
 
-@class WhichBillViewController;
+@class TeachersViewController;
 
 @interface WhichBillAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) WhichBillViewController *viewController;
 
 @end

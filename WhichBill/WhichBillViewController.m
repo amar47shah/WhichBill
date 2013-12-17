@@ -7,11 +7,13 @@
 //
 
 #include <stdlib.h>
+
 #import "WhichBillViewController.h"
 #import "WBItem.h"
 #import "WBItemStore.h"
 #import "WBImageStore.h"
 #import "WBAnswerButton.h"
+
 
 @implementation WhichBillViewController
 
@@ -20,21 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    NSArray *items = [[WBItemStore sharedStore] allItems];
-    
-    for (WBItem *item in items)
-    {
-        NSLog(@"%@", [item name]);
-        NSLog(@"%f", [item cost]);
-        NSLog(@"%@", [item imageKey]);
-        if ([[WBImageStore sharedStore] imageForKey:[item imageKey]])
-            NSLog(@"Image Found.");
-        else
-             NSLog(@"Image Not Found.");
-    }
-    
+
+    [[self navigationItem] setHidesBackButton:YES];
     [[self view] setBackgroundColor:[UIColor colorWithRed:0.875 green:0.88 blue:0.91 alpha:1]];
     
     UIImage *twentyDollarImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Dollar20" ofType:@"jpg"]];
@@ -56,9 +45,13 @@
     [slider setMinimumValue:0.0];
     [slider setMaximumValue:20.0];
     [slider setContinuous:YES];
+    [endSessionButton setEnabled:YES];
+    
+    [self setCurrentRoundNumber:0];
+    [self setStartOfSession:[NSDate date]];
+    [self setRoundLogs:[NSMutableArray array]];
     
     [self playAgain:nil];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,8 +63,6 @@
 - (IBAction)buttonPushed:(id)sender
 {
     WBAnswerButton *answerButton = (WBAnswerButton *)sender;
-    
-    NSLog(@"Button pressed: $%d", [answerButton tag]);
     
     if (answerButton == correctButton)
         [self answerCorrect];
@@ -86,7 +77,6 @@
     while (newItem == currentItem)
         newItem = [items objectAtIndex: arc4random() % [items count]];
     [self setCurrentItem:newItem];
-    NSLog(@"Current item is %@", [currentItem name]);
     
     if ([currentItem cost] < 1)
         [self setCorrectButton:oneDollarButton];
@@ -117,11 +107,31 @@
     [oneDollarButton setEnabled:YES];
     [slider setEnabled:YES];
     [playAgainButton setEnabled:NO];
+    
+    [self setCurrentRoundNumber:[self currentRoundNumber] + 1];
+    [self setStartOfRound:[NSDate date]];
+}
+
+- (IBAction)endSession:(id)sender
+{
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [timeFormatter setTimeStyle:NSDateFormatterShortStyle];
+    NSString *sessionDateAndTime = [NSString stringWithFormat:@"%@ %@"
+                                    ,[dateFormatter stringFromDate:[self startOfSession]]
+                                    ,[timeFormatter stringFromDate:[self startOfSession]]];
+    
+    NSDictionary *sessionLog = [NSDictionary dictionaryWithObjectsAndKeys:[self studentID], @"student_id", sessionDateAndTime, @"date_time", [self roundLogs], @"rounds", nil];
+
+    [[self delegate] whichBillViewController:self
+                     readyToSaveNewSession:sessionLog];
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 
 - (void)answerCorrect
 {
-    NSLog(@"Answer correct!");
     [twentyDollarButton setEnabled:NO];
     [tenDollarButton setEnabled:NO];
     [fiveDollarButton setEnabled:NO];
@@ -129,13 +139,14 @@
     [slider setEnabled:NO];
     [playAgainButton setEnabled:YES];
     [msgLabel setText:@"Correct!"];
+    
+    [self logRound];
 }
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
 {
-    NSLog(@"Answer incorrect :(");
     if ([answerButton tag] > [correctButton tag])
-        [msgLabel setText:@"You can use a smaller bill, if you have it."];
+        [msgLabel setText:@"You can use a smaller bill, if you have one."];
     else
         [msgLabel setText:@"That's not enough money. Try a bigger bill"];
     [answerButton setEnabled:NO];
@@ -144,8 +155,6 @@
 
 - (void)sliderChanged:(id)sender
 {
-    NSLog(@"Slider Value: %.3f", [slider value]);
-    
     if (fabs([slider value] - [correctButton tag]) < 0.25)
     {
         [oneDollarButton setEnabled:NO];
@@ -169,6 +178,30 @@
         
         [msgLabel setText:@""];
     }
+}
+
+- (NSNumber *)secondsUsed
+{
+    NSTimeInterval timeUsed = fabs([[self startOfRound] timeIntervalSinceNow]);
+    double seconds = (double)((NSInteger)(timeUsed * 100))/100;
+    return [NSNumber numberWithDouble:seconds];
+}
+
+- (NSNumber *)correctOnFirstTry
+{
+    BOOL value = !([oneDollarButton    alreadyGuessedWrong] +
+                   [fiveDollarButton   alreadyGuessedWrong] +
+                   [tenDollarButton    alreadyGuessedWrong] +
+                   [twentyDollarButton alreadyGuessedWrong]);
+    return [NSNumber numberWithBool:value];
+}
+
+- (void)logRound
+{
+    NSDictionary *item = [NSDictionary dictionaryWithObjectsAndKeys:[currentItem name], @"name", [NSNumber numberWithDouble:[currentItem cost]], @"price", nil];
+    NSDictionary *roundLog = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:[self currentRoundNumber]], @"round_no", item, @"item", [self secondsUsed], @"seconds_used", [self correctOnFirstTry], @"correct_first_try", nil];
+    
+    [[self roundLogs] addObject:roundLog];
 }
 
 @end

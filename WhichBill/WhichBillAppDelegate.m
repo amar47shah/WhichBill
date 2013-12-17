@@ -6,19 +6,28 @@
 //  Copyright (c) 2013 Amar Shah. All rights reserved.
 //
 
+#import "TeachersViewController.h"
+#import "ObjCMongoDB.h"
 #import "WhichBillAppDelegate.h"
-
-#import "WhichBillViewController.h"
 
 @implementation WhichBillAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
+    
     // Override point for customization after application launch.
-    self.viewController = [[WhichBillViewController alloc] initWithNibName:@"WhichBillViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+    
+    NSError *error = nil;
+    MongoConnection *conn = [MongoConnection connectionForServer:@"127.0.0.1" error:&error];
+    TeachersViewController *tvc = [[TeachersViewController alloc] init];
+    [tvc setConn:conn];
+    [tvc loadTeacherDocs];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tvc];
+    [[self window] setRootViewController:navController];
+    [[self window] makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -32,6 +41,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

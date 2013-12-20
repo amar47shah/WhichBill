@@ -27,16 +27,16 @@
     if (self)
     {
         // add items to Item Store
-        WBItem *wb1 = [[WBItem alloc] initWithName:@"Apples" cost:1.98];
-        WBItem *wb2 = [[WBItem alloc] initWithName:@"Roach Poison" cost:10.12];
-        WBItem *wb3 = [[WBItem alloc] initWithName:@"Grapefruit" cost:0.99];
-        WBItem *wb4 = [[WBItem alloc] initWithName:@"Peanut Butter" cost:2.51];
-        WBItem *wb5 = [[WBItem alloc] initWithName:@"Chicken Wings" cost:5.49];
-        WBItem *wb6 = [[WBItem alloc] initWithName:@"Bologna" cost:2.89];
-        WBItem *wb7 = [[WBItem alloc] initWithName:@"Batteries" cost:9.99];
-        WBItem *wb8 = [[WBItem alloc] initWithName:@"Serrano Peppers" cost:0.49];
-        WBItem *wb9 = [[WBItem alloc] initWithName:@"Strawberry Jam" cost:3.28];
-        WBItem *wb10= [[WBItem alloc] initWithName:@"Wheat Bread" cost:2.35];
+        WBItem *wb1 = [[WBItem alloc] initWithName:@"Apples" costMin:1.5 costMax:2.5];
+        WBItem *wb2 = [[WBItem alloc] initWithName:@"Roach Poison" costMin:8.0 costMax:12.0];
+        WBItem *wb3 = [[WBItem alloc] initWithName:@"Grapefruit" costMin:0.70 costMax:1.4];
+        WBItem *wb4 = [[WBItem alloc] initWithName:@"Peanut Butter" costMin:0.90 costMax:3.0];
+        WBItem *wb5 = [[WBItem alloc] initWithName:@"Chicken Wings" costMin:4.5 costMax:7.0];
+        WBItem *wb6 = [[WBItem alloc] initWithName:@"Bologna" costMin:2.0 costMax:3.5];
+        WBItem *wb7 = [[WBItem alloc] initWithName:@"Batteries" costMin:8.0 costMax:14.0];
+        WBItem *wb8 = [[WBItem alloc] initWithName:@"Serrano Peppers" costMin:0.40 costMax:1.1];
+        WBItem *wb9 = [[WBItem alloc] initWithName:@"Strawberry Jam" costMin:0.90 costMax:4.20];
+        WBItem *wb10= [[WBItem alloc] initWithName:@"Wheat Bread" costMin:1.4 costMax:4.1];
         
         allItems = [[NSArray alloc] initWithObjects:
                     wb1, wb2, wb3, wb4, wb5, wb6, wb7, wb8, wb9, wb10, nil];

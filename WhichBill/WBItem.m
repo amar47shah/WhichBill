@@ -7,6 +7,8 @@
 //
 
 #import "WBItem.h"
+#include <stdlib.h>
+#define ARC4RANDOM_MAX 0x100000000
 
 @implementation WBItem
 
@@ -14,15 +16,17 @@
 
 - (id)init
 {
-    return [self initWithName:@"Item" cost:0.0];
+    return [self initWithName:@"Item" costMin:0.0 costMax:0.0];
 }
 
 
-- (id) initWithName:(NSString *)n cost:(double)c
+- (id) initWithName:(NSString *)n costMin:(double)cMin costMax:(double)cMax
 {
     self = [super init];
     if (self)
     {
+        srand(time(NULL));
+        
         CFUUIDRef newUniqueID = CFUUIDCreate(kCFAllocatorDefault);
         CFStringRef newUniqueIDString = CFUUIDCreateString (kCFAllocatorDefault, newUniqueID);
         
@@ -34,19 +38,34 @@
         CFRelease(newUniqueID);
         
         [self setName:n];
-        [self setCost:c];
+        [self setCostMin:cMin];
+        [self setCostMax:cMax];
+        [self setCost];
     }
     return self;
 }
+
+- (void)setCostMin:(double)cMin
+{
+    costMin = cMin;
+}
+
+- (void)setCostMax:(double)cMax
+{
+    costMax = cMax;
+}
+
 
 - (double)cost
 {
     return cost;
 }
 
-- (void)setCost:(double)c
+- (void)setCost
 {
-    cost = c;
+    double range = fabs(costMax - costMin);
+    
+    cost = ((double)arc4random() / ARC4RANDOM_MAX) * range + costMin;
 }
 
 @end

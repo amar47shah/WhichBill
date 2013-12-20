@@ -10,14 +10,18 @@
 
 @interface WBItem : NSObject
 {
+    double costMin;
+    double costMax;
     double cost;
 }
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, copy) NSString *imageKey;
 
-- (id)initWithName:(NSString *)n cost:(double)c;
+- (id)initWithName:(NSString *)n costMin:(double)cMin costMax:(double)cMax;
 - (double)cost;
-- (void)setCost:(double)c;
+- (void)setCostMin:(double)cMin;
+- (void)setCostMax:(double)cMax;
+- (void)setCost;
 
 @end

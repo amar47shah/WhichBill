@@ -121,7 +121,7 @@
 
 - (void)answerCorrect
 {
-    NSLog(@"Answer correct!");
+    //NSLog(@"Answer correct!");
     [twentyDollarButton setEnabled:NO];
     [tenDollarButton setEnabled:NO];
     [fiveDollarButton setEnabled:NO];
@@ -133,7 +133,7 @@
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
 {
-    NSLog(@"Answer incorrect :(");
+    //NSLog(@"Answer incorrect :(");
     if ([answerButton tag] > [correctButton tag])
         [msgLabel setText:@"You can use a smaller bill, if you have it."];
     else
@@ -144,7 +144,7 @@
 
 - (void)sliderChanged:(id)sender
 {
-    NSLog(@"Slider Value: %.3f", [slider value]);
+    //NSLog(@"Slider Value: %.3f", [slider value]);
     
     if (fabs([slider value] - [correctButton tag]) < 0.25)
     {

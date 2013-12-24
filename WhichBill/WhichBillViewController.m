@@ -85,8 +85,9 @@
     WBItem *newItem = currentItem;
     while (newItem == currentItem)
         newItem = [items objectAtIndex: arc4random() % [items count]];
+    [currentItem setCost];
     [self setCurrentItem:newItem];
-    NSLog(@"Current item is %@", [currentItem name]);
+    NSLog(@"Current item is %@: $%.2f", [currentItem name], [currentItem cost]);
     
     if ([currentItem cost] < 1)
         [self setCorrectButton:oneDollarButton];

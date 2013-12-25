@@ -45,7 +45,6 @@
 		09A6CEED1867EF1E00B26ACC /* Hot Dog Buns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB31867EF1E00B26ACC /* Hot Dog Buns.jpg */; };
 		09A6CEEE1867EF1E00B26ACC /* Hot Dogs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB41867EF1E00B26ACC /* Hot Dogs.jpg */; };
 		09A6CEEF1867EF1E00B26ACC /* Ice Cream.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB51867EF1E00B26ACC /* Ice Cream.jpg */; };
-		09A6CEF01867EF1E00B26ACC /* Ketchup.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB61867EF1E00B26ACC /* Ketchup.JPG */; };
 		09A6CEF11867EF1E00B26ACC /* Lasagna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB71867EF1E00B26ACC /* Lasagna.jpg */; };
 		09A6CEF21867EF1E00B26ACC /* Laundry Detergent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB81867EF1E00B26ACC /* Laundry Detergent.jpg */; };
 		09A6CEF31867EF1E00B26ACC /* Lemons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CEB91867EF1E00B26ACC /* Lemons.jpg */; };
@@ -73,6 +72,7 @@
 		09A6CF091867EF1E00B26ACC /* String Cheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CECF1867EF1E00B26ACC /* String Cheese.jpg */; };
 		09A6CF0A1867EF1E00B26ACC /* Tortilla Chips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CED01867EF1E00B26ACC /* Tortilla Chips.jpg */; };
 		09A6CF0B1867EF1E00B26ACC /* Wheat Bread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CED11867EF1E00B26ACC /* Wheat Bread.jpg */; };
+		09A6CF0F186A95AC00B26ACC /* Ketchup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CF0E186A95AC00B26ACC /* Ketchup.jpg */; };
 		09B31F3F1789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
 		09B31F411789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
 		09B31F431789CCAF0018AB6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F421789CCAF0018AB6A /* CoreGraphics.framework */; };
@@ -144,7 +144,6 @@
 		09A6CEB31867EF1E00B26ACC /* Hot Dog Buns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hot Dog Buns.jpg"; sourceTree = "<group>"; };
 		09A6CEB41867EF1E00B26ACC /* Hot Dogs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hot Dogs.jpg"; sourceTree = "<group>"; };
 		09A6CEB51867EF1E00B26ACC /* Ice Cream.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ice Cream.jpg"; sourceTree = "<group>"; };
-		09A6CEB61867EF1E00B26ACC /* Ketchup.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ketchup.JPG; sourceTree = "<group>"; };
 		09A6CEB71867EF1E00B26ACC /* Lasagna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lasagna.jpg; sourceTree = "<group>"; };
 		09A6CEB81867EF1E00B26ACC /* Laundry Detergent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Laundry Detergent.jpg"; sourceTree = "<group>"; };
 		09A6CEB91867EF1E00B26ACC /* Lemons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lemons.jpg; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		09A6CECF1867EF1E00B26ACC /* String Cheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "String Cheese.jpg"; sourceTree = "<group>"; };
 		09A6CED01867EF1E00B26ACC /* Tortilla Chips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tortilla Chips.jpg"; sourceTree = "<group>"; };
 		09A6CED11867EF1E00B26ACC /* Wheat Bread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wheat Bread.jpg"; sourceTree = "<group>"; };
+		09A6CF0E186A95AC00B26ACC /* Ketchup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ketchup.jpg; sourceTree = "<group>"; };
 		09B31F3B1789CCAF0018AB6A /* WhichBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B31F3E1789CCAF0018AB6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09B31F401789CCAF0018AB6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -262,7 +262,7 @@
 				09A6CEB31867EF1E00B26ACC /* Hot Dog Buns.jpg */,
 				09A6CEB41867EF1E00B26ACC /* Hot Dogs.jpg */,
 				09A6CEB51867EF1E00B26ACC /* Ice Cream.jpg */,
-				09A6CEB61867EF1E00B26ACC /* Ketchup.JPG */,
+				09A6CF0E186A95AC00B26ACC /* Ketchup.jpg */,
 				09A6CEB71867EF1E00B26ACC /* Lasagna.jpg */,
 				09A6CEB81867EF1E00B26ACC /* Laundry Detergent.jpg */,
 				09A6CEB91867EF1E00B26ACC /* Lemons.jpg */,
@@ -467,6 +467,7 @@
 				09A6CEF41867EF1E00B26ACC /* Limes.jpg in Resources */,
 				09A6CF011867EF1E00B26ACC /* Sliced Cheese.jpg in Resources */,
 				09A6CEF31867EF1E00B26ACC /* Lemons.jpg in Resources */,
+				09A6CF0F186A95AC00B26ACC /* Ketchup.jpg in Resources */,
 				09B31F491789CCAF0018AB6A /* InfoPlist.strings in Resources */,
 				09A6CEE31867EF1E00B26ACC /* Eggplant.jpg in Resources */,
 				09A6CF021867EF1E00B26ACC /* Soda 2-Liter.jpg in Resources */,
@@ -474,7 +475,6 @@
 				09A6CF051867EF1E00B26ACC /* Sponges.jpg in Resources */,
 				09A6CEDD1867EF1E00B26ACC /* Cookies.jpg in Resources */,
 				09A6CF0A1867EF1E00B26ACC /* Tortilla Chips.jpg in Resources */,
-				09A6CEF01867EF1E00B26ACC /* Ketchup.JPG in Resources */,
 				09A6CEDC1867EF1E00B26ACC /* Coconuts.jpg in Resources */,
 				09B31F511789CCAF0018AB6A /* Default.png in Resources */,
 				09A6CF041867EF1E00B26ACC /* Spaghetti.jpg in Resources */,

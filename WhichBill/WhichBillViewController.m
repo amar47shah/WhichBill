@@ -147,7 +147,7 @@
 {
     //NSLog(@"Slider Value: %.3f", [slider value]);
     
-    if (fabs([slider value] - [correctButton tag]) < 0.25)
+    if (fabs([slider value] - [correctButton tag]) < 0.50)
     {
         [oneDollarButton setEnabled:NO];
         [fiveDollarButton setEnabled:NO];

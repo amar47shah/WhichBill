@@ -81,7 +81,6 @@
 		09B31F4F1789CCAF0018AB6A /* WhichBillAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */; };
 		09B31F511789CCAF0018AB6A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F501789CCAF0018AB6A /* Default.png */; };
 		09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F521789CCAF0018AB6A /* Default@2x.png */; };
-		09B31F551789CCAF0018AB6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F541789CCAF0018AB6A /* Default-568h@2x.png */; };
 		09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F571789CCAF0018AB6A /* WhichBillViewController.m */; };
 		09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */; };
 		09B31F631789CCAF0018AB6A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F621789CCAF0018AB6A /* SenTestingKit.framework */; };
@@ -99,6 +98,10 @@
 		09E21E4918711AC900844F45 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3F18711AC900844F45 /* Icon-Small-50@2x.png */; };
 		09E21E4A18711AC900844F45 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E4018711AC900844F45 /* Icon-Small.png */; };
 		09E21E4B18711AC900844F45 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E4118711AC900844F45 /* Icon-Small@2x.png */; };
+		09E21E4F187120A900844F45 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E4E187120A900844F45 /* Default-Landscape@2x~ipad.png */; };
+		09E21E511871228700844F45 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E501871228700844F45 /* Default-Landscape~ipad.png */; };
+		09E21E53187122F700844F45 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E52187122F700844F45 /* Default~ipad.png */; };
+		09E21E55187123D500844F45 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E54187123D500844F45 /* Default@2x~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +197,6 @@
 		09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillAppDelegate.m; sourceTree = "<group>"; };
 		09B31F501789CCAF0018AB6A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		09B31F521789CCAF0018AB6A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		09B31F541789CCAF0018AB6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		09B31F561789CCAF0018AB6A /* WhichBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillViewController.h; sourceTree = "<group>"; };
 		09B31F571789CCAF0018AB6A /* WhichBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillViewController.m; sourceTree = "<group>"; };
 		09B31F5A1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhichBillViewController.xib; sourceTree = "<group>"; };
@@ -214,6 +216,10 @@
 		09E21E3F18711AC900844F45 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "Imgs/Icons/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		09E21E4018711AC900844F45 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Imgs/Icons/Icon-Small.png"; sourceTree = "<group>"; };
 		09E21E4118711AC900844F45 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Imgs/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		09E21E4E187120A900844F45 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		09E21E501871228700844F45 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		09E21E52187122F700844F45 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		09E21E54187123D500844F45 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +386,10 @@
 		09B31F451789CCAF0018AB6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09E21E54187123D500844F45 /* Default@2x~ipad.png */,
+				09E21E501871228700844F45 /* Default-Landscape~ipad.png */,
+				09E21E52187122F700844F45 /* Default~ipad.png */,
+				09E21E4E187120A900844F45 /* Default-Landscape@2x~ipad.png */,
 				09E21E3818711AC900844F45 /* Icon-40.png */,
 				09E21E3918711AC900844F45 /* Icon-40@2x.png */,
 				09E21E3A18711AC900844F45 /* Icon-72.png */,
@@ -396,7 +406,6 @@
 				09B31F4C1789CCAF0018AB6A /* WhichBill-Prefix.pch */,
 				09B31F501789CCAF0018AB6A /* Default.png */,
 				09B31F521789CCAF0018AB6A /* Default@2x.png */,
-				09B31F541789CCAF0018AB6A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -520,12 +529,12 @@
 				09A6CED71867EF1E00B26ACC /* Bell Peppers.jpg in Resources */,
 				09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */,
 				09A6CEF11867EF1E00B26ACC /* Lasagna.jpg in Resources */,
+				09E21E4F187120A900844F45 /* Default-Landscape@2x~ipad.png in Resources */,
 				09E21E4818711AC900844F45 /* Icon-Small-50.png in Resources */,
 				09A6CEFE1867EF1E00B26ACC /* Salad Dressing.jpg in Resources */,
 				09A6CEF51867EF1E00B26ACC /* Mayonnaise.jpg in Resources */,
 				09A6CEE41867EF1E00B26ACC /* Frozen French Fries.jpg in Resources */,
 				09A6CED41867EF1E00B26ACC /* Avocados.jpg in Resources */,
-				09B31F551789CCAF0018AB6A /* Default-568h@2x.png in Resources */,
 				09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */,
 				09A6CEDF1867EF1E00B26ACC /* Crackers.jpg in Resources */,
 				09A6CEDA1867EF1E00B26ACC /* Chicken Noodle Soup.jpg in Resources */,
@@ -541,12 +550,14 @@
 				09A6CED51867EF1E00B26ACC /* Bananas.jpg in Resources */,
 				09A6CEEB1867EF1E00B26ACC /* Hamburger Patties.jpg in Resources */,
 				09A6CED91867EF1E00B26ACC /* Broccoli.jpg in Resources */,
+				09E21E53187122F700844F45 /* Default~ipad.png in Resources */,
 				09A6CEFA1867EF1E00B26ACC /* Pears.jpg in Resources */,
 				09A6CEF81867EF1E00B26ACC /* Pancake Mix.jpg in Resources */,
 				09A6CEE81867EF1E00B26ACC /* Grapefruit.jpg in Resources */,
 				09A6CEE21867EF1E00B26ACC /* Dish Soap.jpg in Resources */,
 				09E21E4A18711AC900844F45 /* Icon-Small.png in Resources */,
 				09A6CF061867EF1E00B26ACC /* Steaks.jpg in Resources */,
+				09E21E511871228700844F45 /* Default-Landscape~ipad.png in Resources */,
 				09A6CEE51867EF1E00B26ACC /* Frozen Vegetables.jpg in Resources */,
 				09A6CF0B1867EF1E00B26ACC /* Wheat Bread.jpg in Resources */,
 				09355056179B5CD000B612EC /* Dollar05.jpg in Resources */,
@@ -557,6 +568,7 @@
 				09A6CEEE1867EF1E00B26ACC /* Hot Dogs.jpg in Resources */,
 				09E21E4218711AC900844F45 /* Icon-40.png in Resources */,
 				09A6CEE61867EF1E00B26ACC /* Ginger.jpg in Resources */,
+				09E21E55187123D500844F45 /* Default@2x~ipad.png in Resources */,
 				09A6CEFC1867EF1E00B26ACC /* Potato Chips.jpg in Resources */,
 				09A6CED81867EF1E00B26ACC /* Bologna.jpg in Resources */,
 				09A6CED21867EF1E00B26ACC /* Apple Juice.jpg in Resources */,

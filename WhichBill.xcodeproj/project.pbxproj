@@ -89,6 +89,16 @@
 		09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
 		09B31F6D1789CCAF0018AB6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */; };
 		09B31F701789CCAF0018AB6A /* WhichBillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */; };
+		09E21E4218711AC900844F45 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3818711AC900844F45 /* Icon-40.png */; };
+		09E21E4318711AC900844F45 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3918711AC900844F45 /* Icon-40@2x.png */; };
+		09E21E4418711AC900844F45 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3A18711AC900844F45 /* Icon-72.png */; };
+		09E21E4518711AC900844F45 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3B18711AC900844F45 /* Icon-72@2x.png */; };
+		09E21E4618711AC900844F45 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3C18711AC900844F45 /* Icon-76.png */; };
+		09E21E4718711AC900844F45 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3D18711AC900844F45 /* Icon-76@2x.png */; };
+		09E21E4818711AC900844F45 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3E18711AC900844F45 /* Icon-Small-50.png */; };
+		09E21E4918711AC900844F45 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E3F18711AC900844F45 /* Icon-Small-50@2x.png */; };
+		09E21E4A18711AC900844F45 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E4018711AC900844F45 /* Icon-Small.png */; };
+		09E21E4B18711AC900844F45 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E21E4118711AC900844F45 /* Icon-Small@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +204,16 @@
 		09B31F6C1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09B31F6E1789CCAF0018AB6A /* WhichBillTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillTests.h; sourceTree = "<group>"; };
 		09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillTests.m; sourceTree = "<group>"; };
+		09E21E3818711AC900844F45 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "Imgs/Icons/Icon-40.png"; sourceTree = "<group>"; };
+		09E21E3918711AC900844F45 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "Imgs/Icons/Icon-40@2x.png"; sourceTree = "<group>"; };
+		09E21E3A18711AC900844F45 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Imgs/Icons/Icon-72.png"; sourceTree = "<group>"; };
+		09E21E3B18711AC900844F45 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Imgs/Icons/Icon-72@2x.png"; sourceTree = "<group>"; };
+		09E21E3C18711AC900844F45 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "Imgs/Icons/Icon-76.png"; sourceTree = "<group>"; };
+		09E21E3D18711AC900844F45 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "Imgs/Icons/Icon-76@2x.png"; sourceTree = "<group>"; };
+		09E21E3E18711AC900844F45 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Imgs/Icons/Icon-Small-50.png"; sourceTree = "<group>"; };
+		09E21E3F18711AC900844F45 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "Imgs/Icons/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		09E21E4018711AC900844F45 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Imgs/Icons/Icon-Small.png"; sourceTree = "<group>"; };
+		09E21E4118711AC900844F45 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Imgs/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +380,16 @@
 		09B31F451789CCAF0018AB6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09E21E3818711AC900844F45 /* Icon-40.png */,
+				09E21E3918711AC900844F45 /* Icon-40@2x.png */,
+				09E21E3A18711AC900844F45 /* Icon-72.png */,
+				09E21E3B18711AC900844F45 /* Icon-72@2x.png */,
+				09E21E3C18711AC900844F45 /* Icon-76.png */,
+				09E21E3D18711AC900844F45 /* Icon-76@2x.png */,
+				09E21E3E18711AC900844F45 /* Icon-Small-50.png */,
+				09E21E3F18711AC900844F45 /* Icon-Small-50@2x.png */,
+				09E21E4018711AC900844F45 /* Icon-Small.png */,
+				09E21E4118711AC900844F45 /* Icon-Small@2x.png */,
 				09B31F461789CCAF0018AB6A /* WhichBill-Info.plist */,
 				09B31F471789CCAF0018AB6A /* InfoPlist.strings */,
 				09B31F4A1789CCAF0018AB6A /* main.m */,
@@ -470,7 +500,9 @@
 				09A6CEE71867EF1E00B26ACC /* Graham Crackers.jpg in Resources */,
 				09A6CEE11867EF1E00B26ACC /* Cucumbers.jpg in Resources */,
 				09A6CEF41867EF1E00B26ACC /* Limes.jpg in Resources */,
+				09E21E4318711AC900844F45 /* Icon-40@2x.png in Resources */,
 				09A6CF011867EF1E00B26ACC /* Sliced Cheese.jpg in Resources */,
+				09E21E4518711AC900844F45 /* Icon-72@2x.png in Resources */,
 				09A6CEF31867EF1E00B26ACC /* Lemons.jpg in Resources */,
 				09A6CF0F186A95AC00B26ACC /* Ketchup.jpg in Resources */,
 				09B31F491789CCAF0018AB6A /* InfoPlist.strings in Resources */,
@@ -482,11 +514,13 @@
 				09A6CF0A1867EF1E00B26ACC /* Tortilla Chips.jpg in Resources */,
 				09A6CEDC1867EF1E00B26ACC /* Coconuts.jpg in Resources */,
 				09B31F511789CCAF0018AB6A /* Default.png in Resources */,
+				09E21E4618711AC900844F45 /* Icon-76.png in Resources */,
 				09A6CF041867EF1E00B26ACC /* Spaghetti.jpg in Resources */,
 				09A6CEE01867EF1E00B26ACC /* Cream Cheese.jpg in Resources */,
 				09A6CED71867EF1E00B26ACC /* Bell Peppers.jpg in Resources */,
 				09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */,
 				09A6CEF11867EF1E00B26ACC /* Lasagna.jpg in Resources */,
+				09E21E4818711AC900844F45 /* Icon-Small-50.png in Resources */,
 				09A6CEFE1867EF1E00B26ACC /* Salad Dressing.jpg in Resources */,
 				09A6CEF51867EF1E00B26ACC /* Mayonnaise.jpg in Resources */,
 				09A6CEE41867EF1E00B26ACC /* Frozen French Fries.jpg in Resources */,
@@ -511,6 +545,7 @@
 				09A6CEF81867EF1E00B26ACC /* Pancake Mix.jpg in Resources */,
 				09A6CEE81867EF1E00B26ACC /* Grapefruit.jpg in Resources */,
 				09A6CEE21867EF1E00B26ACC /* Dish Soap.jpg in Resources */,
+				09E21E4A18711AC900844F45 /* Icon-Small.png in Resources */,
 				09A6CF061867EF1E00B26ACC /* Steaks.jpg in Resources */,
 				09A6CEE51867EF1E00B26ACC /* Frozen Vegetables.jpg in Resources */,
 				09A6CF0B1867EF1E00B26ACC /* Wheat Bread.jpg in Resources */,
@@ -518,7 +553,9 @@
 				09A6CF081867EF1E00B26ACC /* Strawberry Jam.jpg in Resources */,
 				09355057179B5CD000B612EC /* Dollar10.jpg in Resources */,
 				09A6CF091867EF1E00B26ACC /* String Cheese.jpg in Resources */,
+				09E21E4718711AC900844F45 /* Icon-76@2x.png in Resources */,
 				09A6CEEE1867EF1E00B26ACC /* Hot Dogs.jpg in Resources */,
+				09E21E4218711AC900844F45 /* Icon-40.png in Resources */,
 				09A6CEE61867EF1E00B26ACC /* Ginger.jpg in Resources */,
 				09A6CEFC1867EF1E00B26ACC /* Potato Chips.jpg in Resources */,
 				09A6CED81867EF1E00B26ACC /* Bologna.jpg in Resources */,
@@ -526,14 +563,17 @@
 				09A6CEFD1867EF1E00B26ACC /* Roach Poison.jpg in Resources */,
 				09A6CED31867EF1E00B26ACC /* Apples.jpg in Resources */,
 				09355058179B5CD000B612EC /* Dollar20.jpg in Resources */,
+				09E21E4418711AC900844F45 /* Icon-72.png in Resources */,
 				09A6CEF61867EF1E00B26ACC /* Oatmeal.jpg in Resources */,
 				09A6CEED1867EF1E00B26ACC /* Hot Dog Buns.jpg in Resources */,
 				09A6CEEA1867EF1E00B26ACC /* Ground Pork.jpg in Resources */,
 				09A6CF001867EF1E00B26ACC /* Serrano Peppers.jpg in Resources */,
 				09A6CEEF1867EF1E00B26ACC /* Ice Cream.jpg in Resources */,
 				09A6CEFF1867EF1E00B26ACC /* Sausage Muffins.jpg in Resources */,
+				09E21E4918711AC900844F45 /* Icon-Small-50@2x.png in Resources */,
 				09A6CEF91867EF1E00B26ACC /* Peanut Butter.jpg in Resources */,
 				09A6CEEC1867EF1E00B26ACC /* Honey.jpg in Resources */,
+				09E21E4B18711AC900844F45 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +689,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -674,7 +714,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -690,6 +730,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -704,6 +745,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

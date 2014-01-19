@@ -20,7 +20,7 @@
     __weak IBOutlet WBAnswerButton *tenDollarButton;
     __weak IBOutlet WBAnswerButton *fiveDollarButton;
     __weak IBOutlet WBAnswerButton *oneDollarButton;
-    __weak IBOutlet UIBarButtonItem *playAgainButton;
+    __weak IBOutlet UIButton *playAgainButton;
     __weak IBOutlet UISlider *slider;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #include <stdlib.h>
+#import "InstructionsViewController.h"
 #import "WhichBillViewController.h"
 #import "WBItem.h"
 #import "WBItemStore.h"
@@ -118,6 +119,25 @@
     [oneDollarButton setEnabled:YES];
     [slider setEnabled:YES];
     [playAgainButton setEnabled:NO];
+}
+
+- (IBAction)showInstructions:(id)sender
+{
+    InstructionsViewController *instructions = [[InstructionsViewController alloc] init];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        instructionsPopover = [[UIPopoverController alloc] initWithContentViewController:instructions];
+        UIButton *button = (UIButton *)sender;
+        [instructionsPopover presentPopoverFromRect:button.bounds
+                                             inView:button
+                           permittedArrowDirections:UIPopoverArrowDirectionAny
+                                           animated:YES];
+    }
+    else
+    {
+        [self presentViewController:instructions animated:YES completion:nil];
+    }
 }
 
 - (void)answerCorrect

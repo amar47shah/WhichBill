@@ -173,6 +173,9 @@
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="showInstructions:" destination="-1" eventType="touchUpInside" id="kWV-9J-i6L"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vlT-QD-oiI">
                             <rect key="frame" x="828" y="0.0" width="167" height="59"/>
@@ -198,7 +201,6 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
-        <barButtonItem style="plain" systemItem="flexibleSpace" id="604"/>
     </objects>
     <resources>
         <image name="refresh.png" width="26" height="26"/>

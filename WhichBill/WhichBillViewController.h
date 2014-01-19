@@ -22,6 +22,8 @@
     __weak IBOutlet WBAnswerButton *oneDollarButton;
     __weak IBOutlet UIButton *playAgainButton;
     __weak IBOutlet UISlider *slider;
+    
+    UIPopoverController *instructionsPopover;
 }
 
 @property (nonatomic, weak) WBItem *currentItem;
@@ -29,6 +31,7 @@
 
 - (IBAction)buttonPushed:(id)sender;
 - (IBAction)playAgain:(id)sender;
+- (IBAction)showInstructions:(id)sender;
 - (void)answerCorrect;
 - (void)answerIncorrect:(WBAnswerButton *)answer;
 - (void)sliderChanged:(id)sender;

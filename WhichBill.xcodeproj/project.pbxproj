@@ -15,7 +15,8 @@
 		09355058179B5CD000B612EC /* Dollar20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355019179B5CD000B612EC /* Dollar20.jpg */; };
 		0935505B179B823200B612EC /* WBImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0935505A179B823200B612EC /* WBImageStore.m */; };
 		09355064179DECC500B612EC /* WBAnswerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09355063179DECC500B612EC /* WBAnswerButton.m */; };
-		0977136A188B81FE007E6B42 /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09771369188B81FE007E6B42 /* InstructionsViewController.m */; };
+		09771375188B896B007E6B42 /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09771373188B896B007E6B42 /* InstructionsViewController.m */; };
+		09771376188B896B007E6B42 /* InstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09771374188B896B007E6B42 /* InstructionsViewController.xib */; };
 		09A6CED21867EF1E00B26ACC /* Apple Juice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */; };
 		09A6CED31867EF1E00B26ACC /* Apples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE991867EF1E00B26ACC /* Apples.jpg */; };
 		09A6CED41867EF1E00B26ACC /* Avocados.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */; };
@@ -132,8 +133,9 @@
 		0935505A179B823200B612EC /* WBImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageStore.m; sourceTree = "<group>"; };
 		09355062179DECC500B612EC /* WBAnswerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAnswerButton.h; sourceTree = "<group>"; };
 		09355063179DECC500B612EC /* WBAnswerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAnswerButton.m; sourceTree = "<group>"; };
-		09771368188B81FE007E6B42 /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
-		09771369188B81FE007E6B42 /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
+		09771372188B896B007E6B42 /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
+		09771373188B896B007E6B42 /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
+		09771374188B896B007E6B42 /* InstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionsViewController.xib; sourceTree = "<group>"; };
 		09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Apple Juice.jpg"; sourceTree = "<group>"; };
 		09A6CE991867EF1E00B26ACC /* Apples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apples.jpg; sourceTree = "<group>"; };
 		09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Avocados.jpg; sourceTree = "<group>"; };
@@ -380,16 +382,17 @@
 				09354FD5179AF15F00B612EC /* WBItemStore.h */,
 				09355059179B823100B612EC /* WBImageStore.h */,
 				09355062179DECC500B612EC /* WBAnswerButton.h */,
-				09771368188B81FE007E6B42 /* InstructionsViewController.h */,
+				09771372188B896B007E6B42 /* InstructionsViewController.h */,
 				09B31F561789CCAF0018AB6A /* WhichBillViewController.h */,
 				09B31F4D1789CCAF0018AB6A /* WhichBillAppDelegate.h */,
 				09354FD3179AEB4000B612EC /* WBItem.m */,
 				09354FD6179AF15F00B612EC /* WBItemStore.m */,
 				0935505A179B823200B612EC /* WBImageStore.m */,
 				09355063179DECC500B612EC /* WBAnswerButton.m */,
-				09771369188B81FE007E6B42 /* InstructionsViewController.m */,
+				09771373188B896B007E6B42 /* InstructionsViewController.m */,
 				09B31F571789CCAF0018AB6A /* WhichBillViewController.m */,
 				09B31F4E1789CCAF0018AB6A /* WhichBillAppDelegate.m */,
+				09771374188B896B007E6B42 /* InstructionsViewController.xib */,
 				09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */,
 				09B31F451789CCAF0018AB6A /* Supporting Files */,
 				09354FD8179B5CD000B612EC /* Imgs */,
@@ -541,6 +544,7 @@
 				09A6CF0F186A95AC00B26ACC /* Ketchup.jpg in Resources */,
 				09B31F491789CCAF0018AB6A /* InfoPlist.strings in Resources */,
 				09A6CEE31867EF1E00B26ACC /* Eggplant.jpg in Resources */,
+				09771376188B896B007E6B42 /* InstructionsViewController.xib in Resources */,
 				09DB42771889C6C0008EB283 /* speech_bubble_transparent@2x.png in Resources */,
 				09A6CF021867EF1E00B26ACC /* Soda 2-Liter.jpg in Resources */,
 				09A6CEE91867EF1E00B26ACC /* Grapes.jpg in Resources */,
@@ -652,7 +656,7 @@
 				09B31F4B1789CCAF0018AB6A /* main.m in Sources */,
 				09B31F4F1789CCAF0018AB6A /* WhichBillAppDelegate.m in Sources */,
 				09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */,
-				0977136A188B81FE007E6B42 /* InstructionsViewController.m in Sources */,
+				09771375188B896B007E6B42 /* InstructionsViewController.m in Sources */,
 				09354FD4179AEB4000B612EC /* WBItem.m in Sources */,
 				09354FD7179AF15F00B612EC /* WBItemStore.m in Sources */,
 				0935505B179B823200B612EC /* WBImageStore.m in Sources */,

@@ -167,6 +167,9 @@
     {
         [self presentViewController:instructions animated:YES completion:nil];
     }
+    
+    [self log:@"Play start sound."];
+    AudioServicesPlaySystemSound(soundStart);
 }
 
 - (void)answerCorrect

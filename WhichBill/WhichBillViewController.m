@@ -100,13 +100,13 @@
         newItem = [items objectAtIndex: arc4random() % [items count]];
     [currentItem setCost];
     [self setCurrentItem:newItem];
-    NSLog(@"Current item is %@: $%.2f", [currentItem name], [currentItem cost]);
+    NSLog(@"Current item is %@: $%f", [currentItem name], [currentItem cost]);
     
-    if ([currentItem cost] < 1)
+    if ([currentItem cost] < 1.005)
         [self setCorrectButton:oneDollarButton];
-    else if ([currentItem cost] < 5)
+    else if ([currentItem cost] < 5.005)
         [self setCorrectButton:fiveDollarButton];
-    else if ([currentItem cost] < 10)
+    else if ([currentItem cost] < 10.005)
         [self setCorrectButton:tenDollarButton];
     else
         [self setCorrectButton:twentyDollarButton];

@@ -64,8 +64,8 @@
 - (void)setCost
 {
     double range = fabs(costMax - costMin);
-    
-    cost = ((double)arc4random() / ARC4RANDOM_MAX) * range + costMin;
+    double value = ((double)arc4random() / ARC4RANDOM_MAX) * range + costMin;
+    cost = floor(value * 100 + 0.5) / 100;
 }
 
 @end

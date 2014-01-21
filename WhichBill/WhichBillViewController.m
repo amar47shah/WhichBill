@@ -14,6 +14,7 @@
 #import "WBItemStore.h"
 #import "WBImageStore.h"
 #import "WBAnswerButton.h"
+#define VERBOSE 0
 
 @implementation WhichBillViewController
 
@@ -23,20 +24,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+       // Do any additional setup after loading the view, typically from a nib.
     
     NSArray *items = [[WBItemStore sharedStore] allItems];
     
-    for (WBItem *item in items)
+    if (VERBOSE)
     {
-        NSLog(@"%@", [item name]);
-        NSLog(@"%f", [item cost]);
-        NSLog(@"%@", [item imageKey]);
-        if ([[WBImageStore sharedStore] imageForKey:[item imageKey]])
-            NSLog(@"Image Found.");
-        else
-             NSLog(@"Image Not Found.");
+        for (WBItem *item in items)
+        {
+            NSLog(@"%@", [item name]);
+            NSLog(@"%f", [item cost]);
+            NSLog(@"%@", [item imageKey]);
+            if ([[WBImageStore sharedStore] imageForKey:[item imageKey]])
+                NSLog(@"Image Found.");
+            else
+                NSLog(@"Image Not Found.");
+        }
     }
+
     
     [[self view] setBackgroundColor:[UIColor colorWithRed:0.875 green:0.88 blue:0.91 alpha:1]];
     
@@ -61,7 +66,7 @@
     [slider setContinuous:YES];
     
     NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"correct" withExtension:@"wav"];
-    NSLog(@"%@", soundURL);
+    if (VERBOSE) NSLog(@"%@", soundURL);
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundFileObject);
 
     [self playAgain:nil];
@@ -84,7 +89,7 @@
 {
     WBAnswerButton *answerButton = (WBAnswerButton *)sender;
     
-    NSLog(@"Button pressed: $%d", [answerButton tag]);
+    if (VERBOSE) NSLog(@"Button pressed: $%d", [answerButton tag]);
     
     if (answerButton == correctButton)
         [self answerCorrect];
@@ -100,7 +105,7 @@
         newItem = [items objectAtIndex: arc4random() % [items count]];
     [currentItem setCost];
     [self setCurrentItem:newItem];
-    NSLog(@"Current item is %@: $%f", [currentItem name], [currentItem cost]);
+    if (VERBOSE) NSLog(@"Current item is %@: $%f", [currentItem name], [currentItem cost]);
     
     if ([currentItem cost] < 1.005)
         [self setCorrectButton:oneDollarButton];
@@ -154,7 +159,7 @@
 
 - (void)answerCorrect
 {
-    //NSLog(@"Answer correct!");
+    if (VERBOSE) NSLog(@"Answer correct!");
     [twentyDollarButton setEnabled:NO];
     [tenDollarButton setEnabled:NO];
     [fiveDollarButton setEnabled:NO];
@@ -167,7 +172,7 @@
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
 {
-    //NSLog(@"Answer incorrect :(");
+    if (VERBOSE) NSLog(@"Answer incorrect :(");
     if ([answerButton tag] > [correctButton tag])
         [msgLabel setText:@"You can use a smaller bill, if you have it."];
     else
@@ -178,7 +183,7 @@
 
 - (void)sliderChanged:(id)sender
 {
-    //NSLog(@"Slider Value: %.3f", [slider value]);
+    if (VERBOSE) NSLog(@"Slider Value: %.3f", [slider value]);
     
     if (fabs([slider value] - [correctButton tag]) < 0.50)
     {
@@ -207,7 +212,7 @@
 
 - (void)playCorrectSound
 {
-    NSLog(@"Playing sound.");
+    if (VERBOSE) NSLog(@"Playing sound.");
     AudioServicesPlaySystemSound(soundFileObject);
 }
 

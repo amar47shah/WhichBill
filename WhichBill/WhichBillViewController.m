@@ -209,7 +209,6 @@
 {
     NSLog(@"Playing sound.");
     AudioServicesPlaySystemSound(soundFileObject);
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 @end

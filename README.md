@@ -9,4 +9,6 @@ Contact:
 Amar Shah
 amar47shah@gmail.com
 
-App-Bits Icons used courtesy of app-bits.com .
+Creative Commons:
+App-Bits Icons used courtesy of http://app-bits.com/free-icons.html
+Game Sounds used courtesy of Bertrof: http://www.freesound.org/people/Bertrof/packs/8276/

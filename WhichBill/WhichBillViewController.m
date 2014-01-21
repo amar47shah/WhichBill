@@ -7,6 +7,7 @@
 //
 
 #include <stdlib.h>
+#include <AudioToolbox/AudioToolbox.h>
 #import "InstructionsViewController.h"
 #import "WhichBillViewController.h"
 #import "WBItem.h"
@@ -17,6 +18,7 @@
 @implementation WhichBillViewController
 
 @synthesize currentItem, correctButton;
+@synthesize soundFileObject;
 
 - (void)viewDidLoad
 {
@@ -58,14 +60,24 @@
     [slider setMaximumValue:20.0];
     [slider setContinuous:YES];
     
-    [self playAgain:nil];
+    NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"correct" withExtension:@"wav"];
+    NSLog(@"%@", soundURL);
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundFileObject);
 
+    [self playAgain:nil];
+    
+}
+
+- (void) dealloc
+{
+    AudioServicesDisposeSystemSoundID(soundFileObject);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    AudioServicesDisposeSystemSoundID(soundFileObject);
 }
 
 - (IBAction)buttonPushed:(id)sender
@@ -150,6 +162,7 @@
     [slider setEnabled:NO];
     [playAgainButton setEnabled:YES];
     [msgLabel setText:@"Correct!"];
+    [self playCorrectSound];
 }
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
@@ -190,6 +203,13 @@
         
         [msgLabel setText:@""];
     }
+}
+
+- (void)playCorrectSound
+{
+    NSLog(@"Playing sound.");
+    AudioServicesPlaySystemSound(soundFileObject);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 @end

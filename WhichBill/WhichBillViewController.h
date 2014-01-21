@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Amar Shah. All rights reserved.
 //
 
+#include <AudioToolbox/AudioToolbox.h>
 #import <UIKit/UIKit.h>
 #import "WBItem.h"
 #import "WBAnswerButton.h"
@@ -23,11 +24,13 @@
     __weak IBOutlet UIButton *playAgainButton;
     __weak IBOutlet UISlider *slider;
     
-    UIPopoverController *instructionsPopover;
+    UIPopoverController *instructionsPopover;    
+    SystemSoundID soundFileObject;
 }
 
 @property (nonatomic, weak) WBItem *currentItem;
 @property (nonatomic, weak) WBAnswerButton *correctButton;
+@property (readonly) SystemSoundID soundFileObject;
 
 - (IBAction)buttonPushed:(id)sender;
 - (IBAction)playAgain:(id)sender;

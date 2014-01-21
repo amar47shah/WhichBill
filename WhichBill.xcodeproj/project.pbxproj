@@ -17,6 +17,8 @@
 		09355064179DECC500B612EC /* WBAnswerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09355063179DECC500B612EC /* WBAnswerButton.m */; };
 		09771375188B896B007E6B42 /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09771373188B896B007E6B42 /* InstructionsViewController.m */; };
 		09771376188B896B007E6B42 /* InstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09771374188B896B007E6B42 /* InstructionsViewController.xib */; };
+		09771378188CE544007E6B42 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09771377188CE543007E6B42 /* AudioToolbox.framework */; };
+		0977137A188DF0AC007E6B42 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09771379188DF0AC007E6B42 /* correct.wav */; };
 		09A6CED21867EF1E00B26ACC /* Apple Juice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */; };
 		09A6CED31867EF1E00B26ACC /* Apples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE991867EF1E00B26ACC /* Apples.jpg */; };
 		09A6CED41867EF1E00B26ACC /* Avocados.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */; };
@@ -136,6 +138,8 @@
 		09771372188B896B007E6B42 /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
 		09771373188B896B007E6B42 /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
 		09771374188B896B007E6B42 /* InstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionsViewController.xib; sourceTree = "<group>"; };
+		09771377188CE543007E6B42 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		09771379188DF0AC007E6B42 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = Snds/correct.wav; sourceTree = "<group>"; };
 		09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Apple Juice.jpg"; sourceTree = "<group>"; };
 		09A6CE991867EF1E00B26ACC /* Apples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apples.jpg; sourceTree = "<group>"; };
 		09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Avocados.jpg; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09771378188CE544007E6B42 /* AudioToolbox.framework in Frameworks */,
 				09B31F3F1789CCAF0018AB6A /* UIKit.framework in Frameworks */,
 				09B31F411789CCAF0018AB6A /* Foundation.framework in Frameworks */,
 				09B31F431789CCAF0018AB6A /* CoreGraphics.framework in Frameworks */,
@@ -345,6 +350,14 @@
 			path = Money;
 			sourceTree = "<group>";
 		};
+		0977137B188DF0B6007E6B42 /* Snds */ = {
+			isa = PBXGroup;
+			children = (
+				09771379188DF0AC007E6B42 /* correct.wav */,
+			);
+			name = Snds;
+			sourceTree = "<group>";
+		};
 		09B31F321789CCAF0018AB6A = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +380,7 @@
 		09B31F3D1789CCAF0018AB6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09771377188CE543007E6B42 /* AudioToolbox.framework */,
 				09B31F3E1789CCAF0018AB6A /* UIKit.framework */,
 				09B31F401789CCAF0018AB6A /* Foundation.framework */,
 				09B31F421789CCAF0018AB6A /* CoreGraphics.framework */,
@@ -396,6 +410,7 @@
 				09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */,
 				09B31F451789CCAF0018AB6A /* Supporting Files */,
 				09354FD8179B5CD000B612EC /* Imgs */,
+				0977137B188DF0B6007E6B42 /* Snds */,
 			);
 			path = WhichBill;
 			sourceTree = "<group>";
@@ -619,6 +634,7 @@
 				09A6CEEC1867EF1E00B26ACC /* Honey.jpg in Resources */,
 				09DB42741889C6C0008EB283 /* refresh.png in Resources */,
 				09E21E4B18711AC900844F45 /* Icon-Small@2x.png in Resources */,
+				0977137A188DF0AC007E6B42 /* correct.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

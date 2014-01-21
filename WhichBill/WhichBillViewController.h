@@ -25,12 +25,16 @@
     __weak IBOutlet UISlider *slider;
     
     UIPopoverController *instructionsPopover;    
-    SystemSoundID soundFileObject;
+    SystemSoundID soundCorrect;
+    SystemSoundID soundIncorrect;
+    SystemSoundID soundStart;
 }
 
 @property (nonatomic, weak) WBItem *currentItem;
 @property (nonatomic, weak) WBAnswerButton *correctButton;
-@property (readonly) SystemSoundID soundFileObject;
+@property (readonly) SystemSoundID soundCorrect;
+@property (readonly) SystemSoundID soundIncorrect;
+@property (readonly) SystemSoundID soundStart;
 
 - (IBAction)buttonPushed:(id)sender;
 - (IBAction)playAgain:(id)sender;

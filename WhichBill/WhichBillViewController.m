@@ -19,7 +19,7 @@
 @implementation WhichBillViewController
 
 @synthesize currentItem, correctButton;
-@synthesize soundFileObject;
+@synthesize soundCorrect, soundIncorrect, soundStart;
 
 - (void)viewDidLoad
 {
@@ -65,23 +65,35 @@
     [slider setContinuous:YES];
     
     NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"correct" withExtension:@"wav"];
-    if (VERBOSE) NSLog(@"%@", soundURL);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundFileObject);
+    if (VERBOSE) NSLog(@"Correct Sound: %@", soundURL);
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundCorrect);
+    
+    soundURL = [[NSBundle mainBundle] URLForResource:@"incorrect" withExtension:@"wav"];
+    if (VERBOSE) NSLog(@"Incorrect Sound: %@", soundURL);
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundIncorrect);
 
+    soundURL = [[NSBundle mainBundle] URLForResource:@"start" withExtension:@"wav"];
+    if (VERBOSE) NSLog(@"Start Sound: %@", soundURL);
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundStart);
+    
     [self playAgain:nil];
     
 }
 
 - (void) dealloc
 {
-    AudioServicesDisposeSystemSoundID(soundFileObject);
+    AudioServicesDisposeSystemSoundID(soundCorrect);
+    AudioServicesDisposeSystemSoundID(soundIncorrect);
+    AudioServicesDisposeSystemSoundID(soundStart);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
-    AudioServicesDisposeSystemSoundID(soundFileObject);
+    
+    AudioServicesDisposeSystemSoundID(soundCorrect);
+    AudioServicesDisposeSystemSoundID(soundIncorrect);
+    AudioServicesDisposeSystemSoundID(soundStart);
 }
 
 - (IBAction)buttonPushed:(id)sender
@@ -135,6 +147,8 @@
     [oneDollarButton setEnabled:YES];
     [slider setEnabled:YES];
     [playAgainButton setEnabled:NO];
+    
+    AudioServicesPlaySystemSound(soundStart);
 }
 
 - (IBAction)showInstructions:(id)sender
@@ -166,7 +180,7 @@
     [slider setEnabled:NO];
     [playAgainButton setEnabled:YES];
     [msgLabel setText:@"Correct!"];
-    [self playCorrectSound];
+    AudioServicesPlaySystemSound(soundCorrect);
 }
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
@@ -178,6 +192,7 @@
         [msgLabel setText:@"That's not enough money. Try a bigger bill"];
     [answerButton setEnabled:NO];
     [answerButton setAlreadyGuessedWrong:YES];
+    AudioServicesPlaySystemSound(soundIncorrect);
 }
 
 - (void)sliderChanged:(id)sender
@@ -207,12 +222,6 @@
         
         [msgLabel setText:@""];
     }
-}
-
-- (void)playCorrectSound
-{
-    if (VERBOSE) NSLog(@"Playing sound.");
-    AudioServicesPlaySystemSound(soundFileObject);
 }
 
 @end

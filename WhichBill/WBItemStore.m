@@ -26,7 +26,7 @@
     self = [super init];
     if (self)
     {
-        // add items to Item Store
+
         allItems = [[NSArray alloc] initWithObjects:
                     [[WBItem alloc] initWithName:@"Apple Juice"         costMin:4.5 costMax: 6.5],
                     [[WBItem alloc] initWithName:@"Apples"              costMin:0.5 costMax: 1.5],

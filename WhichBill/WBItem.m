@@ -33,7 +33,6 @@
         NSString *key = (__bridge NSString *)newUniqueIDString;
         [self setImageKey:key];
         
-        // release core foundation memory
         CFRelease(newUniqueIDString);
         CFRelease(newUniqueID);
         

@@ -16,7 +16,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
         [self setAlreadyGuessedWrong:NO];
     }
     return self;

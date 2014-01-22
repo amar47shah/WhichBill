@@ -15,9 +15,9 @@
 #import "WBImageStore.h"
 #import "WBAnswerButton.h"
 
-#define VERBOSE 0
-
 @implementation WhichBillViewController
+
+static BOOL const verbose = 0;
 
 @synthesize currentItem, correctButton;
 @synthesize soundCorrect, soundIncorrect, soundStart;
@@ -232,7 +232,7 @@
 
 - (void)log:(NSString *)msg
 {
-    if (VERBOSE) NSLog (@"%@", msg);
+    if (verbose) NSLog (@"%@", msg);
 }
 
 @end

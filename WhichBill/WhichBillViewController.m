@@ -26,19 +26,6 @@ static BOOL const verbose = 0;
 {
     [super viewDidLoad];
     
-    NSArray *items = [[WBItemStore sharedStore] allItems];
-    
-    for (WBItem *item in items)
-    {
-        [self log:[NSString stringWithFormat:@"%@", [item name]]];
-        [self log:[NSString stringWithFormat:@"%f", [item cost]]];
-        [self log:[NSString stringWithFormat:@"%@", [item imageKey]]];
-        if ([[WBImageStore sharedStore] imageForKey:[item imageKey]])
-            [self log:@"Image Found."];
-        else
-            [self log:@"Image Not Found."];
-    }
-    
     [[self view] setBackgroundColor:[UIColor colorWithRed:0.875 green:0.88 blue:0.91 alpha:1]];
     
     UIImage *twentyDollarImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Dollar20" ofType:@"jpg"]];
@@ -61,36 +48,67 @@ static BOOL const verbose = 0;
     [slider setMaximumValue:20.0];
     [slider setContinuous:YES];
     
-    NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"correct" withExtension:@"wav"];
-    [self log:[NSString stringWithFormat:@"Correct Sound: %@", soundURL]];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundCorrect);
-    
-    soundURL = [[NSBundle mainBundle] URLForResource:@"incorrect" withExtension:@"wav"];
-    [self log:[NSString stringWithFormat:@"Incorrect Sound: %@", soundURL]];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundIncorrect);
-
-    soundURL = [[NSBundle mainBundle] URLForResource:@"start" withExtension:@"wav"];
-    [self log:[NSString stringWithFormat:@"Start Sound: %@", soundURL]];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundStart);
-    
-    [self playAgain:nil];
+    soundsLoaded = NO;
     
 }
 
-- (void) dealloc
+- (void)viewWillAppear:(BOOL)animated
 {
-    AudioServicesDisposeSystemSoundID(soundCorrect);
-    AudioServicesDisposeSystemSoundID(soundIncorrect);
-    AudioServicesDisposeSystemSoundID(soundStart);
+    NSArray *items = [[WBItemStore sharedStore] allItems];
+    
+    for (WBItem *item in items)
+    {
+        [self log:[NSString stringWithFormat:@"%@", [item name]]];
+        [self log:[NSString stringWithFormat:@"%f", [item cost]]];
+        [self log:[NSString stringWithFormat:@"%@", [item imageKey]]];
+        if ([[WBImageStore sharedStore] imageForKey:[item imageKey]])
+            [self log:@"Image Found."];
+        else
+            [self log:@"Image Not Found."];
+    }
+    
+    if (!soundsLoaded)
+    {
+        NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"correct" withExtension:@"wav"];
+        [self log:[NSString stringWithFormat:@"Correct Sound: %@", soundURL]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundCorrect);
+    
+        soundURL = [[NSBundle mainBundle] URLForResource:@"incorrect" withExtension:@"wav"];
+        [self log:[NSString stringWithFormat:@"Incorrect Sound: %@", soundURL]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundIncorrect);
+    
+        soundURL = [[NSBundle mainBundle] URLForResource:@"start" withExtension:@"wav"];
+        [self log:[NSString stringWithFormat:@"Start Sound: %@", soundURL]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundStart);
+        
+        soundsLoaded = YES;
+    }
+        
+    [self playAgain:nil];
+}
+
+- (void)dealloc
+{
+    if (soundsLoaded)
+    {
+        AudioServicesDisposeSystemSoundID(soundCorrect);
+        AudioServicesDisposeSystemSoundID(soundIncorrect);
+        AudioServicesDisposeSystemSoundID(soundStart);
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     
-    AudioServicesDisposeSystemSoundID(soundCorrect);
-    AudioServicesDisposeSystemSoundID(soundIncorrect);
-    AudioServicesDisposeSystemSoundID(soundStart);
+    if (soundsLoaded)
+    {
+        AudioServicesDisposeSystemSoundID(soundCorrect);
+        AudioServicesDisposeSystemSoundID(soundIncorrect);
+        AudioServicesDisposeSystemSoundID(soundStart);
+
+        soundsLoaded = NO;
+    }
 }
 
 - (IBAction)buttonPushed:(id)sender
@@ -145,8 +163,7 @@ static BOOL const verbose = 0;
     [slider setEnabled:YES];
     [playAgainButton setEnabled:NO];
     
-    [self log:@"Play start sound."];
-    AudioServicesPlaySystemSound(soundStart);
+    [self playSound:@"start"];
 }
 
 - (IBAction)showInstructions:(id)sender
@@ -168,13 +185,13 @@ static BOOL const verbose = 0;
         [self presentViewController:instructions animated:YES completion:nil];
     }
     
-    [self log:@"Play start sound."];
-    AudioServicesPlaySystemSound(soundStart);
+    [self playSound:@"start"];
 }
 
 - (void)answerCorrect
 {
     [self log:@"Answer correct!"];
+    
     [twentyDollarButton setEnabled:NO];
     [tenDollarButton setEnabled:NO];
     [fiveDollarButton setEnabled:NO];
@@ -183,13 +200,13 @@ static BOOL const verbose = 0;
     [playAgainButton setEnabled:YES];
     [msgLabel setText:@"Correct!"];
     
-    [self log:@"Play correct sound."];
-    AudioServicesPlaySystemSound(soundCorrect);
+    [self playSound:@"correct"];
 }
 
 - (void)answerIncorrect:(WBAnswerButton *)answerButton
 {
     [self log:@"Answer incorrect :("];
+    
     if ([answerButton tag] > [correctButton tag])
         [msgLabel setText:@"You can use a smaller bill, if you have it."];
     else
@@ -197,8 +214,7 @@ static BOOL const verbose = 0;
     [answerButton setEnabled:NO];
     [answerButton setAlreadyGuessedWrong:YES];
     
-    [self log:@"Play incorrect sound."];
-    AudioServicesPlaySystemSound(soundIncorrect);
+    [self playSound:@"incorrect"];
 }
 
 - (void)sliderChanged:(id)sender
@@ -233,6 +249,28 @@ static BOOL const verbose = 0;
 - (void)log:(NSString *)msg
 {
     if (verbose) NSLog (@"%@", msg);
+}
+
+- (void)playSound:(NSString *)snd
+{
+    if (soundsLoaded)
+    {
+        if ([snd isEqualToString:@"start"])
+        {
+            [self log:@"Play start sound."];
+            AudioServicesPlaySystemSound(soundStart);
+        }
+        else if ([snd isEqualToString:@"correct"])
+        {
+            [self log:@"Play correct sound."];
+            AudioServicesPlaySystemSound(soundCorrect);
+        }
+        else if ([snd isEqualToString:@"incorrect"])
+        {
+            [self log:@"Play incorrect sound."];
+            AudioServicesPlaySystemSound(soundIncorrect);
+        }
+    }
 }
 
 @end

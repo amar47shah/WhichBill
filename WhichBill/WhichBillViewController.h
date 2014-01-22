@@ -28,6 +28,7 @@
     SystemSoundID soundCorrect;
     SystemSoundID soundIncorrect;
     SystemSoundID soundStart;
+    BOOL soundsLoaded;
 }
 
 @property (nonatomic, weak) WBItem *currentItem;

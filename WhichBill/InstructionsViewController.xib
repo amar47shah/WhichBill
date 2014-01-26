@@ -52,16 +52,16 @@
                         <fragment content="Keep trying">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                <font key="NSOriginalFont" size="16" name="HelveticaNeue"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
                         <fragment content=" ">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
-                                <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
@@ -80,23 +80,7 @@
                     <rect key="frame" x="20" y="175" width="280" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <attributedString key="attributedText">
-                        <fragment content="Use the ">
-                            <attributes>
-                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                        <fragment content="number line">
-                            <attributes>
-                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                        <fragment content=" to help you:">
+                        <fragment content="If you need help, use the number line:">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -119,7 +103,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="Drag the ">
+                        <fragment content="Drag the">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -127,15 +111,15 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="slider">
+                        <fragment content=" slider to ">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                <font key="NSOriginalFont" size="16" name="HelveticaNeue"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content=" to the right until it is positioned under the item's cost on the number line.">
+                        <fragment content="the right until it is under the item's cost on the number line.">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -158,7 +142,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="Drag the slider ">
+                        <fragment content="From there, drag the slider">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -166,15 +150,15 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="a little further">
+                        <fragment content=" ">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                <font key="NSOriginalFont" size="16" name="HelveticaNeue"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content=" to the right, until it is positioned under a ">
+                        <fragment content="to the right until it is under a ">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>

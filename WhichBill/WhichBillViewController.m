@@ -208,9 +208,9 @@ static BOOL const verbose = 0;
     [self log:@"Answer incorrect :("];
     
     if ([answerButton tag] > [correctButton tag])
-        [msgLabel setText:@"You can use a smaller bill, if you have it."];
+        [msgLabel setText:@"You can use a smaller bill,\nif you have it."];
     else
-        [msgLabel setText:@"That's not enough money. Try a bigger bill"];
+        [msgLabel setText:@"That's not enough money.\nTry a bigger bill"];
     [answerButton setEnabled:NO];
     [answerButton setAlreadyGuessedWrong:YES];
     
@@ -229,7 +229,7 @@ static BOOL const verbose = 0;
         [twentyDollarButton setEnabled:NO];
         [correctButton setEnabled:YES];
         
-        [msgLabel setText:@"Do you see which bill to use?"];
+        [msgLabel setText:@"Do you see which bill\nto use?"];
     }
     else
     {

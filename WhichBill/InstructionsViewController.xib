@@ -103,7 +103,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="Drag the">
+                        <fragment content="Move the">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -111,7 +111,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content=" slider to ">
+                        <fragment content=" slider ">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -119,7 +119,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="the right until it is under the item's cost on the number line.">
+                        <fragment content="until it is under the item's cost on the number line.">
                             <attributes>
                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <font key="NSFont" size="16" name="HelveticaNeue"/>

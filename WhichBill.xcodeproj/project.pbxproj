@@ -15,6 +15,8 @@
 		09355058179B5CD000B612EC /* Dollar20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355019179B5CD000B612EC /* Dollar20.jpg */; };
 		0935505B179B823200B612EC /* WBImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0935505A179B823200B612EC /* WBImageStore.m */; };
 		09355064179DECC500B612EC /* WBAnswerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09355063179DECC500B612EC /* WBAnswerButton.m */; };
+		096ED5B1189DD22800C48FDC /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 096ED5AF189DD22800C48FDC /* Default-Portrait@2x~ipad.png */; };
+		096ED5B2189DD22800C48FDC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 096ED5B0189DD22800C48FDC /* Default-Portrait~ipad.png */; };
 		09771375188B896B007E6B42 /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09771373188B896B007E6B42 /* InstructionsViewController.m */; };
 		09771376188B896B007E6B42 /* InstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09771374188B896B007E6B42 /* InstructionsViewController.xib */; };
 		09771378188CE544007E6B42 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09771377188CE543007E6B42 /* AudioToolbox.framework */; };
@@ -137,6 +139,8 @@
 		0935505A179B823200B612EC /* WBImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageStore.m; sourceTree = "<group>"; };
 		09355062179DECC500B612EC /* WBAnswerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAnswerButton.h; sourceTree = "<group>"; };
 		09355063179DECC500B612EC /* WBAnswerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAnswerButton.m; sourceTree = "<group>"; };
+		096ED5AF189DD22800C48FDC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		096ED5B0189DD22800C48FDC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		09771372188B896B007E6B42 /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
 		09771373188B896B007E6B42 /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
 		09771374188B896B007E6B42 /* InstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionsViewController.xib; sourceTree = "<group>"; };
@@ -424,6 +428,8 @@
 		09B31F451789CCAF0018AB6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				096ED5AF189DD22800C48FDC /* Default-Portrait@2x~ipad.png */,
+				096ED5B0189DD22800C48FDC /* Default-Portrait~ipad.png */,
 				09E21E54187123D500844F45 /* Default@2x~ipad.png */,
 				09E21E501871228700844F45 /* Default-Landscape~ipad.png */,
 				09E21E52187122F700844F45 /* Default~ipad.png */,
@@ -604,6 +610,7 @@
 				09A6CED91867EF1E00B26ACC /* Broccoli.jpg in Resources */,
 				09E21E53187122F700844F45 /* Default~ipad.png in Resources */,
 				09A6CEFA1867EF1E00B26ACC /* Pears.jpg in Resources */,
+				096ED5B1189DD22800C48FDC /* Default-Portrait@2x~ipad.png in Resources */,
 				09A6CEF81867EF1E00B26ACC /* Pancake Mix.jpg in Resources */,
 				0977137E188E1ED7007E6B42 /* incorrect.wav in Resources */,
 				09A6CEE81867EF1E00B26ACC /* Grapefruit.jpg in Resources */,
@@ -631,6 +638,7 @@
 				09355058179B5CD000B612EC /* Dollar20.jpg in Resources */,
 				09E21E4418711AC900844F45 /* Icon-72.png in Resources */,
 				09A6CEF61867EF1E00B26ACC /* Oatmeal.jpg in Resources */,
+				096ED5B2189DD22800C48FDC /* Default-Portrait~ipad.png in Resources */,
 				09A6CEED1867EF1E00B26ACC /* Hot Dog Buns.jpg in Resources */,
 				09DB42761889C6C0008EB283 /* speech_bubble_transparent.png in Resources */,
 				09A6CEEA1867EF1E00B26ACC /* Ground Pork.jpg in Resources */,

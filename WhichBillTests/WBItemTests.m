@@ -30,6 +30,8 @@
 {
     // Put teardown code here; it will be run once, after the last test case.
     [super tearDown];
+    item = nil;
+    [NSThread sleepForTimeInterval:.1];
 }
 
 - (void)testThatWBItemExists
@@ -60,6 +62,13 @@
     STAssertFalse([item cost] == oldCost, @"the WBItem's cost should change when it is sent setCost message");
 }
 
-
+- (void)testThatWBItemCostMinAndCostMaxCanBeChanged
+{
+    [item setCostMin:30.0];
+    [item setCostMax:40.0];
+    [item setCost];
+    STAssertTrue([item cost] >= 30.0, @"the WBItem's cost must be at least as big as the minimum specified");
+    STAssertTrue([item cost] <= 40.0, @"the WBItem's cost must be no greater than the maximum specified");
+}
 
 @end

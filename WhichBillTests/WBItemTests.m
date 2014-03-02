@@ -21,17 +21,15 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
     item = [[WBItem alloc] initWithName:@"Test" costMin:0.0 costMax:20.0];
 
 }
 
 - (void)tearDown
 {
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
     item = nil;
-    [NSThread sleepForTimeInterval:.1];
+    [NSThread sleepForTimeInterval:.025];
+    [super tearDown];
 }
 
 - (void)testThatWBItemExists

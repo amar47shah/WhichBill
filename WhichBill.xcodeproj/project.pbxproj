@@ -24,6 +24,9 @@
 		0977137A188DF0AC007E6B42 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09771379188DF0AC007E6B42 /* correct.wav */; };
 		0977137E188E1ED7007E6B42 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0977137C188E1ED7007E6B42 /* incorrect.wav */; };
 		0977137F188E1ED7007E6B42 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0977137D188E1ED7007E6B42 /* start.wav */; };
+		09973B5A18C36FDB001B9824 /* WBItemStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5918C36FDB001B9824 /* WBItemStoreTests.m */; };
+		09973B5C18C38421001B9824 /* WBAnswerButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5B18C38421001B9824 /* WBAnswerButtonTests.m */; };
+		09973B5E18C38FF0001B9824 /* WBImageStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5D18C38FF0001B9824 /* WBImageStoreTests.m */; };
 		09A6CED21867EF1E00B26ACC /* Apple Juice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */; };
 		09A6CED31867EF1E00B26ACC /* Apples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE991867EF1E00B26ACC /* Apples.jpg */; };
 		09A6CED41867EF1E00B26ACC /* Avocados.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */; };
@@ -149,6 +152,9 @@
 		09771379188DF0AC007E6B42 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = Snds/correct.wav; sourceTree = "<group>"; };
 		0977137C188E1ED7007E6B42 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = Snds/incorrect.wav; sourceTree = "<group>"; };
 		0977137D188E1ED7007E6B42 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = start.wav; path = Snds/start.wav; sourceTree = "<group>"; };
+		09973B5918C36FDB001B9824 /* WBItemStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItemStoreTests.m; sourceTree = "<group>"; };
+		09973B5B18C38421001B9824 /* WBAnswerButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAnswerButtonTests.m; sourceTree = "<group>"; };
+		09973B5D18C38FF0001B9824 /* WBImageStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageStoreTests.m; sourceTree = "<group>"; };
 		09A6CE981867EF1E00B26ACC /* Apple Juice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Apple Juice.jpg"; sourceTree = "<group>"; };
 		09A6CE991867EF1E00B26ACC /* Apples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apples.jpg; sourceTree = "<group>"; };
 		09A6CE9A1867EF1E00B26ACC /* Avocados.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Avocados.jpg; sourceTree = "<group>"; };
@@ -457,6 +463,9 @@
 			isa = PBXGroup;
 			children = (
 				09060B4018C294D000BAAE36 /* WBItemTests.m */,
+				09973B5918C36FDB001B9824 /* WBItemStoreTests.m */,
+				09973B5D18C38FF0001B9824 /* WBImageStoreTests.m */,
+				09973B5B18C38421001B9824 /* WBAnswerButtonTests.m */,
 				09B31F691789CCAF0018AB6A /* Supporting Files */,
 			);
 			path = WhichBillTests;
@@ -699,7 +708,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09973B5C18C38421001B9824 /* WBAnswerButtonTests.m in Sources */,
 				09060B4118C294D000BAAE36 /* WBItemTests.m in Sources */,
+				09973B5E18C38FF0001B9824 /* WBImageStoreTests.m in Sources */,
+				09973B5A18C36FDB001B9824 /* WBItemStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

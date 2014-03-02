@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09060B4118C294D000BAAE36 /* WBItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09060B4018C294D000BAAE36 /* WBItemTests.m */; };
 		09354FD4179AEB4000B612EC /* WBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 09354FD3179AEB4000B612EC /* WBItem.m */; };
 		09354FD7179AF15F00B612EC /* WBItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09354FD6179AF15F00B612EC /* WBItemStore.m */; };
 		09355055179B5CD000B612EC /* Dollar01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09355016179B5CD000B612EC /* Dollar01.jpg */; };
@@ -95,7 +96,6 @@
 		09B31F641789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
 		09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
 		09B31F6D1789CCAF0018AB6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */; };
-		09B31F701789CCAF0018AB6A /* WhichBillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */; };
 		09DB42741889C6C0008EB283 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DB42701889C6C0008EB283 /* refresh.png */; };
 		09DB42751889C6C0008EB283 /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DB42711889C6C0008EB283 /* refresh@2x.png */; };
 		09DB42761889C6C0008EB283 /* speech_bubble_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DB42721889C6C0008EB283 /* speech_bubble_transparent.png */; };
@@ -127,6 +127,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09060B4018C294D000BAAE36 /* WBItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItemTests.m; sourceTree = "<group>"; };
 		09354FD2179AEB4000B612EC /* WBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBItem.h; sourceTree = "<group>"; };
 		09354FD3179AEB4000B612EC /* WBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItem.m; sourceTree = "<group>"; };
 		09354FD5179AF15F00B612EC /* WBItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBItemStore.h; sourceTree = "<group>"; };
@@ -225,8 +226,6 @@
 		09B31F621789CCAF0018AB6A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		09B31F6A1789CCAF0018AB6A /* WhichBillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhichBillTests-Info.plist"; sourceTree = "<group>"; };
 		09B31F6C1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09B31F6E1789CCAF0018AB6A /* WhichBillTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillTests.h; sourceTree = "<group>"; };
-		09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillTests.m; sourceTree = "<group>"; };
 		09DB42701889C6C0008EB283 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = Icons/refresh.png; sourceTree = "<group>"; };
 		09DB42711889C6C0008EB283 /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refresh@2x.png"; path = "Icons/refresh@2x.png"; sourceTree = "<group>"; };
 		09DB42721889C6C0008EB283 /* speech_bubble_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speech_bubble_transparent.png; path = Icons/speech_bubble_transparent.png; sourceTree = "<group>"; };
@@ -457,8 +456,7 @@
 		09B31F681789CCAF0018AB6A /* WhichBillTests */ = {
 			isa = PBXGroup;
 			children = (
-				09B31F6E1789CCAF0018AB6A /* WhichBillTests.h */,
-				09B31F6F1789CCAF0018AB6A /* WhichBillTests.m */,
+				09060B4018C294D000BAAE36 /* WBItemTests.m */,
 				09B31F691789CCAF0018AB6A /* Supporting Files */,
 			);
 			path = WhichBillTests;
@@ -677,6 +675,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -700,7 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B31F701789CCAF0018AB6A /* WhichBillTests.m in Sources */,
+				09060B4118C294D000BAAE36 /* WBItemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

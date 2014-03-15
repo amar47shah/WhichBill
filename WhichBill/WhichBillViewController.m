@@ -129,7 +129,7 @@ static BOOL const verbose = 0;
     WBItem *newItem = currentItem;
     while (newItem == currentItem)
         newItem = [items objectAtIndex: arc4random() % [items count]];
-    [currentItem setCost];
+    [newItem setCost];
     [self setCurrentItem:newItem];
     [self log:[NSString stringWithFormat:@"Current item is %@: $%f", [currentItem name], [currentItem cost]]];
     

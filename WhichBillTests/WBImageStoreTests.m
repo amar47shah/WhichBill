@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Amar Shah. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "WBImageStore.h"
 
-@interface WBImageStoreTests : SenTestCase
+@interface WBImageStoreTests : XCTestCase
 {
     WBImageStore *store;
 }
@@ -27,19 +27,18 @@
 - (void)tearDown
 {
     store = nil;
-    [NSThread sleepForTimeInterval:0.05];
     [super tearDown];
 }
 
 - (void)testThatImageStoreIsCreated
 {
-    STAssertNotNil(store, @"WBImageStore's shared store should exist");
+    XCTAssertNotNil(store, @"WBImageStore's shared store should exist");
 }
 
 - (void)testThatImageStoreIsShared
 {
     WBImageStore *newStore = [WBImageStore sharedStore];
-    STAssertTrue(newStore == store, @"there should be only one pointer to the shared store");
+    XCTAssertTrue(newStore == store, @"there should be only one pointer to the shared store");
 }
 
 @end

@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Amar Shah. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "WBAnswerButton.h"
 
-@interface WBAnswerButtonTests : SenTestCase
+@interface WBAnswerButtonTests : XCTestCase
 {
     WBAnswerButton *button;
 }
@@ -27,19 +27,18 @@
 - (void)tearDown
 {
     button = nil;
-    [NSThread sleepForTimeInterval:0.05];
     [super tearDown];
 }
 
 - (void)testThatAlreadyGuessedWrongStartsFalse
 {
-    STAssertFalse([button alreadyGuessedWrong], @"alreadyGuessedWrong should start out False.");
+    XCTAssertFalse([button alreadyGuessedWrong], @"alreadyGuessedWrong should start out False.");
 }
 
 - (void)testThatAlreadyGuessedWrongValueCanBeChangedToTrue
 {
     [button setAlreadyGuessedWrong:YES];
-    STAssertTrue([button alreadyGuessedWrong], @"should be able to set alreadyGuessedWrong to True");
+    XCTAssertTrue([button alreadyGuessedWrong], @"should be able to set alreadyGuessedWrong to True");
 }
 
 @end

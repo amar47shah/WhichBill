@@ -24,6 +24,7 @@
 		0977137A188DF0AC007E6B42 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09771379188DF0AC007E6B42 /* correct.wav */; };
 		0977137E188E1ED7007E6B42 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0977137C188E1ED7007E6B42 /* incorrect.wav */; };
 		0977137F188E1ED7007E6B42 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0977137D188E1ED7007E6B42 /* start.wav */; };
+		0986068218D480E000C3DAC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0986067F18D47FF000C3DAC9 /* XCTest.framework */; };
 		09973B5A18C36FDB001B9824 /* WBItemStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5918C36FDB001B9824 /* WBItemStoreTests.m */; };
 		09973B5C18C38421001B9824 /* WBAnswerButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5B18C38421001B9824 /* WBAnswerButtonTests.m */; };
 		09973B5E18C38FF0001B9824 /* WBImageStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09973B5D18C38FF0001B9824 /* WBImageStoreTests.m */; };
@@ -95,7 +96,6 @@
 		09B31F531789CCAF0018AB6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F521789CCAF0018AB6A /* Default@2x.png */; };
 		09B31F581789CCAF0018AB6A /* WhichBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B31F571789CCAF0018AB6A /* WhichBillViewController.m */; };
 		09B31F5B1789CCAF0018AB6A /* WhichBillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F591789CCAF0018AB6A /* WhichBillViewController.xib */; };
-		09B31F631789CCAF0018AB6A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F621789CCAF0018AB6A /* SenTestingKit.framework */; };
 		09B31F641789CCAF0018AB6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F3E1789CCAF0018AB6A /* UIKit.framework */; };
 		09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B31F401789CCAF0018AB6A /* Foundation.framework */; };
 		09B31F6D1789CCAF0018AB6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B31F6B1789CCAF0018AB6A /* InfoPlist.strings */; };
@@ -152,6 +152,7 @@
 		09771379188DF0AC007E6B42 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = correct.wav; path = Snds/correct.wav; sourceTree = "<group>"; };
 		0977137C188E1ED7007E6B42 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incorrect.wav; path = Snds/incorrect.wav; sourceTree = "<group>"; };
 		0977137D188E1ED7007E6B42 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = start.wav; path = Snds/start.wav; sourceTree = "<group>"; };
+		0986067F18D47FF000C3DAC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09973B5918C36FDB001B9824 /* WBItemStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBItemStoreTests.m; sourceTree = "<group>"; };
 		09973B5B18C38421001B9824 /* WBAnswerButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAnswerButtonTests.m; sourceTree = "<group>"; };
 		09973B5D18C38FF0001B9824 /* WBImageStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageStoreTests.m; sourceTree = "<group>"; };
@@ -228,8 +229,7 @@
 		09B31F561789CCAF0018AB6A /* WhichBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhichBillViewController.h; sourceTree = "<group>"; };
 		09B31F571789CCAF0018AB6A /* WhichBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhichBillViewController.m; sourceTree = "<group>"; };
 		09B31F5A1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhichBillViewController.xib; sourceTree = "<group>"; };
-		09B31F611789CCAF0018AB6A /* WhichBillTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhichBillTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09B31F621789CCAF0018AB6A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		09B31F611789CCAF0018AB6A /* WhichBillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhichBillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B31F6A1789CCAF0018AB6A /* WhichBillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhichBillTests-Info.plist"; sourceTree = "<group>"; };
 		09B31F6C1789CCAF0018AB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09DB42701889C6C0008EB283 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = Icons/refresh.png; sourceTree = "<group>"; };
@@ -268,7 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B31F631789CCAF0018AB6A /* SenTestingKit.framework in Frameworks */,
+				0986068218D480E000C3DAC9 /* XCTest.framework in Frameworks */,
 				09B31F641789CCAF0018AB6A /* UIKit.framework in Frameworks */,
 				09B31F651789CCAF0018AB6A /* Foundation.framework in Frameworks */,
 			);
@@ -387,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				09B31F3B1789CCAF0018AB6A /* WhichBill.app */,
-				09B31F611789CCAF0018AB6A /* WhichBillTests.octest */,
+				09B31F611789CCAF0018AB6A /* WhichBillTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -395,11 +395,11 @@
 		09B31F3D1789CCAF0018AB6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0986067F18D47FF000C3DAC9 /* XCTest.framework */,
 				09771377188CE543007E6B42 /* AudioToolbox.framework */,
 				09B31F3E1789CCAF0018AB6A /* UIKit.framework */,
 				09B31F401789CCAF0018AB6A /* Foundation.framework */,
 				09B31F421789CCAF0018AB6A /* CoreGraphics.framework */,
-				09B31F621789CCAF0018AB6A /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -527,8 +527,8 @@
 			);
 			name = WhichBillTests;
 			productName = WhichBillTests;
-			productReference = 09B31F611789CCAF0018AB6A /* WhichBillTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 09B31F611789CCAF0018AB6A /* WhichBillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -817,6 +817,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amar Shah (X4KDQ67886)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
@@ -832,6 +836,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Amar Shah (X4KDQ67886)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBill/WhichBill-Info.plist";
@@ -848,14 +856,14 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhichBill.app/WhichBill";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBillTests/WhichBillTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -865,14 +873,14 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhichBill.app/WhichBill";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhichBill/WhichBill-Prefix.pch";
 				INFOPLIST_FILE = "WhichBillTests/WhichBillTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

@@ -67,6 +67,8 @@
     [item setCost];
     STAssertTrue([item cost] >= 30.0, @"the WBItem's cost must be at least as big as the minimum specified");
     STAssertTrue([item cost] <= 40.0, @"the WBItem's cost must be no greater than the maximum specified");
+    [item setCostMin:0.0];
+    [item setCostMax:20.0];
 }
 
 @end
